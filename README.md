@@ -8,7 +8,9 @@ OverView
 
 Results
 ------
+![Results](images/results2.png)
+
+-----
+Visualization of trajectory on RViz
 ![Results](images/result.png)
 
-Visualization of trajectory on RViz
-![Results](images/results2.png)
