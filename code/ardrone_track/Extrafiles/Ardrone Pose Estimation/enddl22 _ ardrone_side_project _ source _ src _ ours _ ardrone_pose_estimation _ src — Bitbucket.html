@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html class="linux firefox" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta id="bb-bootstrap" data-current-user="{&quot;isKbdShortcutsEnabled&quot;: true, &quot;isSshEnabled&quot;: false, &quot;isAuthenticated&quot;: false}">
+  
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <title>
+  enddl22 / ardrone_side_project 
+  / source  / src  / ours  / ardrone_pose_estimation  / src 
+ — Bitbucket
+</title>
+  <script src="enddl22%20_%20ardrone_side_project%20_%20source%20_%20src%20_%20ours%20_%20ardrone_pose_estimation%20_%20src%20%E2%80%94%20Bitbucket_files/a2cef8c3d3" type="text/javascript"></script><script src="enddl22%20_%20ardrone_side_project%20_%20source%20_%20src%20_%20ours%20_%20ardrone_pose_estimation%20_%20src%20%E2%80%94%20Bitbucket_files/nr-1026.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+  
+
+
+<meta id="bb-canon-url" name="bb-canon-url" content="https://bitbucket.org">
+<meta name="bb-api-canon-url" content="https://api.bitbucket.org">
+
+
+<meta name="bb-commit-hash" content="dac230a7a1ec">
+<meta name="bb-app-node" content="app-164">
+<meta name="bb-view-name" content="bitbucket.apps.repo2.views.source">
+<meta name="ignore-whitespace" content="False">
+<meta name="tab-size" content="None">
+<meta name="locale" content="en">
+
+<meta name="application-name" content="Bitbucket">
+<meta name="apple-mobile-web-app-title" content="Bitbucket">
+<meta name="theme-color" content="#205081">
+<meta name="msapplication-TileColor" content="#205081">
+<meta name="msapplication-TileImage" content="https://d301sr5gafysq2.cloudfront.net/dac230a7a1ec/img/logos/bitbucket/white-256.png">
+<link rel="apple-touch-icon" sizes="192x192" type="image/png" href="https://d301sr5gafysq2.cloudfront.net/dac230a7a1ec/img/bitbucket_avatar/192/bitbucket.png">
+<link rel="icon" sizes="192x192" type="image/png" href="https://d301sr5gafysq2.cloudfront.net/dac230a7a1ec/img/bitbucket_avatar/192/bitbucket.png">
+<link rel="icon" sizes="16x16 32x32" type="image/x-icon" href="https://bitbucket.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://bitbucket.org/opensearch.xml" title="Bitbucket">
+  <meta name="description" content="">
+  
+  
+    
+  
+
+
+
+  <link rel="stylesheet" href="enddl22%20_%20ardrone_side_project%20_%20source%20_%20src%20_%20ours%20_%20ardrone_pose_estimation%20_%20src%20%E2%80%94%20Bitbucket_files/vendor.css">
+<link rel="stylesheet" href="enddl22%20_%20ardrone_side_project%20_%20source%20_%20src%20_%20ours%20_%20ardrone_pose_estimation%20_%20src%20%E2%80%94%20Bitbucket_files/app.css">
+
+
+
+
+  
+  <script src="enddl22%20_%20ardrone_side_project%20_%20source%20_%20src%20_%20ours%20_%20ardrone_pose_estimation%20_%20src%20%E2%80%94%20Bitbucket_files/early.js"></script>
+  
+  
+    <link href="https://bitbucket.org/enddl22/ardrone_side_project/rss" rel="alternate nofollow" type="application/rss+xml" title="RSS feed for ardrone_side_project">
+
+<style type="text/css"></style><style type="text/css"></style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._1EJO9IWwARWTX7lDEfU0pZ{background:#091e42;bottom:0;left:0;opacity:0;position:fixed;right:0;top:0;-webkit-transition:opacity .22s;transition:opacity .22s;z-index:500}._2OWn1OfctAnTGQ0CNBpeew{opacity:.5}.Y37nvnD-sRpHQe_SLSFUU{pointer-events:none}</style><style type="text/css">.g3oVuWN-43eb3AALJOaXQ{display:-webkit-box;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;z-index:2;-webkit-box-flex:1;flex:1 0 auto}._2ir7jEFN2jVbtzOEaqhLR4{height:100%;display:-webkit-box;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;position:fixed;left:0;z-index:300}</style><style type="text/css">._3b4usWxTHptr04Gt5g7ONq{position:relative}._2lYRsGDFMWm_oQXu71FhvX{-webkit-box-align:center;align-items:center;background:#0049b0;box-sizing:border-box;display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;height:100%;padding-bottom:0;padding:24px 0 16px;position:fixed;width:64px}._3alHyqHr7Fe54hraaHSbLQ ._2lYRsGDFMWm_oQXu71FhvX{-webkit-transition:-webkit-transform .2s;transition:-webkit-transform .2s;transition:transform .2s;transition:transform .2s,-webkit-transform .2s}._1uyyU0Lnd8FdlDdFbFi_fl ._2lYRsGDFMWm_oQXu71FhvX{background:#172b4d}._2bO-T7pkRl4A8rB_JvrCwf{margin-bottom:12px;margin-top:4px}._2B37QJ6EebFYv7cp1aCFsM{-webkit-box-flex:1;flex:1}._32MGzIde-0aLRVTXqubou-{display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-align:center;align-items:center;padding-bottom:20px}</style><style type="text/css">._1S_ySAHcXok9fF--g1NN7l.GzvYl4wWKJK5Wo1AnV1vA{-webkit-transition:width .2s;transition:width .2s}</style><style type="text/css">._3iIxn6Ppl7nmLqPmX_Thun{-webkit-box-align:center;align-items:center;display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;margin-top:16px}.otqy5OCOrXGEIwSyaJhGg{box-sizing:border-box;height:0;opacity:0;visibility:hidden;-webkit-transition:height .22s,margin .22s,opacity .22s;transition:height .22s,margin .22s,opacity .22s}.otqy5OCOrXGEIwSyaJhGg ._1HoawGr6U0nARaAnUgiptt{-webkit-box-align:center;align-items:center;display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column}.otqy5OCOrXGEIwSyaJhGg._1BfgjNjgIch_-GISEtdmnc{height:136px;margin-bottom:28px;opacity:1;visibility:visible}</style><style type="text/css">._16m57_OOwSLfW-l76d72Iy{-webkit-box-align:center;align-items:center;border-radius:50%;color:#fff;cursor:pointer;display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center}._16m57_OOwSLfW-l76d72Iy._3NSpDinZI-ze2hFzh9el0B,._16m57_OOwSLfW-l76d72Iy:focus,._16m57_OOwSLfW-l76d72Iy:hover{background-color:rgba(9,30,66,.48)}._16m57_OOwSLfW-l76d72Iy:active{background-color:#2684ff}.xWGUiIITgGXo9iM1F89Jw{height:32px;margin-top:8px;width:32px}.IhZYmFUogajyqkewf28ER{height:40px;width:40px}._1b72HzxfTZxwtxyRWRHxBE{height:48px;width:48px}.mohuYyt0kflE8Wg7CYAJS{color:#42526e}.mohuYyt0kflE8Wg7CYAJS:hover{background-color:rgba(9,30,66,.04)}.mohuYyt0kflE8Wg7CYAJS:active{color:#0049b0;background-color:#deebff}._1keDJvGzNy_Ilbw_ckFqr-{color:#fff}._1keDJvGzNy_Ilbw_ckFqr-:hover{background-color:#091e42}._1keDJvGzNy_Ilbw_ckFqr-:active{color:#ebecf0;background-color:#42526e}</style><style type="text/css">._1THrBYJrOoFQXcjdyM5xfs{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;margin:0;background:none;border:none;border-radius:50%;padding:0;width:40px;height:40px;outline:none;color:#fff}._1THrBYJrOoFQXcjdyM5xfs:focus{outline:none;box-shadow:0 0 0 2px #4c9aff}</style><style type="text/css">._1tRpvp2ivswdDcqDeLuH96{height:100%;position:fixed}._1KpUvYI8LNHTDJyV36AZHX ._1tRpvp2ivswdDcqDeLuH96{-webkit-transition:width .2s,-webkit-transform .2s;transition:width .2s,-webkit-transform .2s;transition:width .2s,transform .2s;transition:width .2s,transform .2s,-webkit-transform .2s}._1bFVaLTyl0RmTuZYegX4H{box-sizing:border-box;background:#f4f5f7;color:#42526e;width:100%;height:100vh;overflow-x:hidden;overflow-y:auto;padding:24px 8px 0}._1bFVaLTyl0RmTuZYegX4H a,._1bFVaLTyl0RmTuZYegX4H a:hover,._1bFVaLTyl0RmTuZYegX4H a:visited{color:inherit;text-decoration:none}._1bFVaLTyl0RmTuZYegX4H:not(.NJ2G4g8fympQ9I02TLdW6){padding-top:24px}._1bFVaLTyl0RmTuZYegX4H._2teFDCeOO47oSAgPSsB-H9{background-color:#0049b0;color:#fff}._1bFVaLTyl0RmTuZYegX4H._2d8w0ybCLIUkpjFmrjx3rm{background-color:#253858;color:#fff}</style><style type="text/css"></style><style type="text/css"></style><style type="text/css">._3QtA33QaUM7tKwgoENaxSn{height:100%;width:12px;position:relative;left:-6px;cursor:ew-resize}._3QtA33QaUM7tKwgoENaxSn:hover:before{background:#2684ff}._3QtA33QaUM7tKwgoENaxSn:before{content:'';width:2px;height:100%;position:absolute;left:5px}</style><style type="text/css">._2pg-uyK9FSI7Ok-frbequG{position:relative;top:calc(50% - 18px);height:36px;background:none;border:none;color:transparent;width:24px;left:0;cursor:pointer}._2pg-uyK9FSI7Ok-frbequG:focus{outline:none;box-shadow:0 0 0 2px #4c9aff}._2pg-uyK9FSI7Ok-frbequG.KCmG7UtpleMcqrP6JWxMG:after,._2pg-uyK9FSI7Ok-frbequG.KCmG7UtpleMcqrP6JWxMG:before{opacity:1}._2pg-uyK9FSI7Ok-frbequG:focus:after,._2pg-uyK9FSI7Ok-frbequG:focus:before,._2pg-uyK9FSI7Ok-frbequG:hover:after,._2pg-uyK9FSI7Ok-frbequG:hover:before{opacity:1}._2pg-uyK9FSI7Ok-frbequG:focus:before,._2pg-uyK9FSI7Ok-frbequG:hover:before{-webkit-transform:rotate(40deg);transform:rotate(40deg)}.fBlmbowa3ETciVUWRw2uv._2pg-uyK9FSI7Ok-frbequG:focus:before,.fBlmbowa3ETciVUWRw2uv._2pg-uyK9FSI7Ok-frbequG:hover:before{-webkit-transform:rotate(-40deg);transform:rotate(-40deg)}._2pg-uyK9FSI7Ok-frbequG:focus:after,._2pg-uyK9FSI7Ok-frbequG:hover:after{-webkit-transform:rotate(-40deg);transform:rotate(-40deg)}.fBlmbowa3ETciVUWRw2uv._2pg-uyK9FSI7Ok-frbequG:focus:after,.fBlmbowa3ETciVUWRw2uv._2pg-uyK9FSI7Ok-frbequG:hover:after{-webkit-transform:rotate(40deg);transform:rotate(40deg)}._2pg-uyK9FSI7Ok-frbequG:after,._2pg-uyK9FSI7Ok-frbequG:before{content:'';opacity:0;background:#2684ff;width:2px;border-radius:16px;height:8px;position:absolute;left:13px;-webkit-transition:opacity .3s cubic-bezier(.15,1,.3,1),-webkit-transform .2s ease-in-out;transition:opacity .3s cubic-bezier(.15,1,.3,1),-webkit-transform .2s ease-in-out;transition:transform .2s ease-in-out,opacity .3s cubic-bezier(.15,1,.3,1);transition:transform .2s ease-in-out,opacity .3s cubic-bezier(.15,1,.3,1),-webkit-transform .2s ease-in-out;-webkit-transform:rotate(0deg);transform:rotate(0deg)}._2pg-uyK9FSI7Ok-frbequG:before{top:10px;-webkit-transform-origin:1px 7px;transform-origin:1px 7px}._2pg-uyK9FSI7Ok-frbequG:after{top:16px;-webkit-transform-origin:1px 1px;transform-origin:1px 1px}</style><style type="text/css">.vX8vAUybHQ-ruyTK2eX3C{border-radius:3px}.vX8vAUybHQ-ruyTK2eX3C._1XliyLbidPbmxWLoFGRAVb,.vX8vAUybHQ-ruyTK2eX3C:hover{background:rgba(9,30,66,.04)}.vX8vAUybHQ-ruyTK2eX3C._1XliyLbidPbmxWLoFGRAVb._3D7K_QK4JRt78zt2CWDgMJ,.vX8vAUybHQ-ruyTK2eX3C:hover._3D7K_QK4JRt78zt2CWDgMJ{color:#fff;background:rgba(9,30,66,.25)}.vX8vAUybHQ-ruyTK2eX3C._1XliyLbidPbmxWLoFGRAVb._2EaZlW9kLThy4px2DWrVXE,.vX8vAUybHQ-ruyTK2eX3C:hover._2EaZlW9kLThy4px2DWrVXE{color:#fff;background:#091e42}._1XliyLbidPbmxWLoFGRAVb{color:#0052cc}</style><style type="text/css">._2loogrbxor6qk65fdm437I{width:100%;height:40px;box-sizing:border-box;text-overflow:ellipsis;position:relative}._2loogrbxor6qk65fdm437I ._3VHA5O8yAqvxbFihzqBym3{padding:0}._2loogrbxor6qk65fdm437I:hover ._2loogrbxor6qk65fdm437I._3VHA5O8yAqvxbFihzqBym3{padding:0}._2loogrbxor6qk65fdm437I a,._2loogrbxor6qk65fdm437I a:hover,._2loogrbxor6qk65fdm437I a:visited{color:inherit;text-decoration:none}._1yLaorVad_hY4qa5H8WIhe ._3p6IGnbDqXZ5jKjtq7EJc-{padding-left:0;padding-right:8px}._1vs_BfLiJqShPkpZQuUc2w{height:100%;width:100%;padding:0 8px;display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;box-sizing:border-box}._1yLaorVad_hY4qa5H8WIhe{height:36px}._1yLaorVad_hY4qa5H8WIhe ._3Y0o5ET4IZ6stb1zmuIHlZ{font-size:10px;line-height:12px}._3s_POlXnKHfLNIAR88pzS3:focus{display:block;height:100%;border-radius:3px}._3s_POlXnKHfLNIAR88pzS3:focus:focus{outline:none;box-shadow:0 0 0 2px #4c9aff}.CAJxJv_MuFTvI88dZanpX{display:-webkit-box;display:flex;height:100%;-webkit-box-pack:center;justify-content:center;position:absolute;right:8px;top:0}[data-__ak-navigation-container-closed=true] .CAJxJv_MuFTvI88dZanpX{opacity:0}._3p6IGnbDqXZ5jKjtq7EJc-{-webkit-transition:padding .2s;transition:padding .2s;padding:0 16px 0 12px;display:-webkit-box;display:flex;flex-shrink:0}[data-__ak-navigation-container-closed=true] ._3p6IGnbDqXZ5jKjtq7EJc-{padding:0 4px}._3p6IGnbDqXZ5jKjtq7EJc->*{-webkit-box-flex:1;flex:1 0 auto;height:24px;width:24px}.z_QBwiredQEhCe3wZGOsm{min-width:24px}._1MyaornQ3TsUAjDlvIcdgQ{overflow-x:hidden;display:inline-block;-webkit-box-flex:1;flex-grow:1}[data-__ak-navigation-container-closed=true] ._1MyaornQ3TsUAjDlvIcdgQ{opacity:0}._1MyaornQ3TsUAjDlvIcdgQ._1vWeA7_ML-zW3aYpJgGpO4{margin-right:24px}.QISMTeb-4i4wDDPBZvU9N{overflow-x:hidden;text-overflow:ellipsis;white-space:nowrap}._3Y0o5ET4IZ6stb1zmuIHlZ{color:#8993a4;font-size:.85714286em;overflow-x:hidden;text-overflow:ellipsis;white-space:nowrap}._1m7Go8f1NnyGrI1g1etauq{position:relative;z-index:1}[data-__ak-navigation-container-closed=true] ._1m7Go8f1NnyGrI1g1etauq{opacity:0}</style><style type="text/css">._1dE6Vo01PC4izlJVQJ3YI3{display:-webkit-box;display:flex;margin-bottom:8px;margin-left:8px;margin-top:16px}[data-__ak-navigation-container-closed=true] ._1dE6Vo01PC4izlJVQJ3YI3{margin-left:4px;margin-right:4px;border-top:1px solid rgba(9,30,66,.13)}[data-__ak-navigation-container-closed=true] ._1dE6Vo01PC4izlJVQJ3YI3 ._1b3PLbYGH6lcqfQk7o55ZI,[data-__ak-navigation-container-closed=true] ._1dE6Vo01PC4izlJVQJ3YI3 .qQMgnis2uPCETznRMJSKC{visibility:hidden}._2w5IkUAzyIrwr2RisWNXVy{margin-top:24px}._2w5IkUAzyIrwr2RisWNXVy:first-child{margin-top:0}._1b3PLbYGH6lcqfQk7o55ZI{align-self:center;color:#8993a4;display:-webkit-box;display:flex;-webkit-box-flex:1;flex-grow:1;font-size:12px;text-transform:uppercase}.qQMgnis2uPCETznRMJSKC{margin-right:8px}.S5O0-JaIwhBpHt9eO9gA{margin-top:19px;margin-bottom:19px;height:2px;background:rgba(9,30,66,.04)}.S5O0-JaIwhBpHt9eO9gA._2EWptG2GPxIbdXnVUjx8iO{background:rgba(9,30,66,.25)}.S5O0-JaIwhBpHt9eO9gA._2SJAJPGlwgmJCDEaCngr7U{background:#091e42}</style><style type="text/css">._3z8d35lWOOtZu4Ng8u6fi8{height:24px;margin:28px 0 28px 24px}</style><style type="text/css">._1-OyB2DwUdvntJAyVjNuAb{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;align-content:center;padding-bottom:4px}.gxlis2IbLCeqoC6Y9QNdm{text-decoration:none}.gxlis2IbLCeqoC6Y9QNdm:hover{color:#505f79;text-decoration:none}._3ue2chCVvLXuy5XAzFVCWq{width:40px;height:40px}._3ue2chCVvLXuy5XAzFVCWq>*{width:40px;height:40px;border-radius:4px}._1PfZmrWbKs7oIRkNa7iKRt{margin-left:8px}[data-__ak-navigation-container-closed=true] ._1PfZmrWbKs7oIRkNa7iKRt{display:none}.yKckH5teT4OQUEmH3qHXW{color:#42526e;font-weight:500}._27TRUMFiZKbuy_0F-NiBWM{color:#5e6c84}</style><style type="text/css">._2RxPkY83h9VH0ir6UmDk_H{display:-webkit-box;display:flex;position:relative;margin:0 -8px}._12e2fcOdzPdoSlOl2rP1-z{-webkit-box-flex:1;flex:1 0 100%;overflow:hidden;box-sizing:border-box;padding:0 8px}._3Rzg-xPvcZN-au9YXCmKTA{-webkit-animation-name:_3j9Z8KFkLKl9UIpOjCc0F1;animation-name:_3j9Z8KFkLKl9UIpOjCc0F1;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}._1VQZ18eqz8_VX5Otv2DU6b{-webkit-transform:translateX(-100%);transform:translateX(-100%)}@-webkit-keyframes _3j9Z8KFkLKl9UIpOjCc0F1{0%{-webkit-transform:translateX(0);transform:translateX(0)}to{-webkit-transform:translateX(-100%);transform:translateX(-100%)}}@keyframes _3j9Z8KFkLKl9UIpOjCc0F1{0%{-webkit-transform:translateX(0);transform:translateX(0)}to{-webkit-transform:translateX(-100%);transform:translateX(-100%)}}._1Mz2klA7uOocByLvkA2680{-webkit-animation-name:_14haX5mkH3PkVxFLPskviz;animation-name:_14haX5mkH3PkVxFLPskviz;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}._1zNiBm3ODVxP2nfaBDCz0p{-webkit-transform:translateX(0);transform:translateX(0)}@-webkit-keyframes _14haX5mkH3PkVxFLPskviz{0%{-webkit-transform:translateX(-100%);transform:translateX(-100%)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes _14haX5mkH3PkVxFLPskviz{0%{-webkit-transform:translateX(-100%);transform:translateX(-100%)}to{-webkit-transform:translateX(0);transform:translateX(0)}}</style><style type="text/css">._3IaGfqXUK7-ObYurqLNQeH{display:none}._1J7uXpxxH1-STbUZZuNJtG{background:#fff;box-shadow:-32px 0 32px 32px rgba(23,43,77,.24);color:#42526e;display:-webkit-box;display:flex;height:100%;left:0;overflow:hidden;position:fixed;-webkit-transform:translateX(-392px);transform:translateX(-392px);-webkit-transition:width .22s cubic-bezier(.15,1,.3,1),-webkit-transform .22s cubic-bezier(.15,1,.3,1);transition:width .22s cubic-bezier(.15,1,.3,1),-webkit-transform .22s cubic-bezier(.15,1,.3,1);transition:transform .22s cubic-bezier(.15,1,.3,1),width .22s cubic-bezier(.15,1,.3,1);transition:transform .22s cubic-bezier(.15,1,.3,1),width .22s cubic-bezier(.15,1,.3,1),-webkit-transform .22s cubic-bezier(.15,1,.3,1);width:360px}._1J7uXpxxH1-STbUZZuNJtG:not(.sjyAayIsiB-ZCp5pdoeG9){box-shadow:none}._1J7uXpxxH1-STbUZZuNJtG.Rf7ryvr6tAh6wAnH1Cvcu{width:600px;-webkit-transform:translateX(-632px);transform:translateX(-632px)}._1J7uXpxxH1-STbUZZuNJtG.ohgUfATHOtjFykIyXjXDu{width:100vw;-webkit-transform:translateX(-132vw);transform:translateX(-132vw)}._1J7uXpxxH1-STbUZZuNJtG.ohgUfATHOtjFykIyXjXDu.sjyAayIsiB-ZCp5pdoeG9,._1J7uXpxxH1-STbUZZuNJtG.Rf7ryvr6tAh6wAnH1Cvcu.sjyAayIsiB-ZCp5pdoeG9,._1J7uXpxxH1-STbUZZuNJtG.sjyAayIsiB-ZCp5pdoeG9{-webkit-transform:translateX(0);transform:translateX(0)}.MRk4X6kBLQYsBaZmEKou_{min-height:56px;padding-top:8px}.f_WyeretHM6n08U2UHu9M{-webkit-box-align:center;align-items:center;box-sizing:border-box;display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-flex:1;flex:1 0 auto;padding:24px 0 16px;width:64px}.f_WyeretHM6n08U2UHu9M ._2fVrQqyQ3QOkk58KDKfj8t{-webkit-box-align:center;align-items:center;display:-webkit-box;display:flex;height:40px;-webkit-box-pack:center;justify-content:center;width:40px}.f_WyeretHM6n08U2UHu9M ._2mZiDtJ-D8hxwCBnNM5p3g{position:absolute}._17ApRn1jqcyixbtw0gmjAv{box-sizing:border-box;display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;height:100%;overflow-y:auto;padding:16px 8px 0;position:relative;width:100%}._3LRRyUDY6LAA1Dzg17H3M3{width:100%}._1dJAGKEqrVhzZYCn-aUHzd{-webkit-transition:-webkit-transform .22s cubic-bezier(.15,1,.3,1);transition:-webkit-transform .22s cubic-bezier(.15,1,.3,1);transition:transform .22s cubic-bezier(.15,1,.3,1);transition:transform .22s cubic-bezier(.15,1,.3,1),-webkit-transform .22s cubic-bezier(.15,1,.3,1);-webkit-transform:translateX(392px);transform:translateX(392px)}.Rf7ryvr6tAh6wAnH1Cvcu ._1dJAGKEqrVhzZYCn-aUHzd{-webkit-transform:translateX(632px);transform:translateX(632px)}.ohgUfATHOtjFykIyXjXDu ._1dJAGKEqrVhzZYCn-aUHzd{-webkit-transform:translateX(132vw);transform:translateX(132vw)}.ohgUfATHOtjFykIyXjXDu.sjyAayIsiB-ZCp5pdoeG9 ._1dJAGKEqrVhzZYCn-aUHzd,.Rf7ryvr6tAh6wAnH1Cvcu.sjyAayIsiB-ZCp5pdoeG9 ._1dJAGKEqrVhzZYCn-aUHzd,.sjyAayIsiB-ZCp5pdoeG9 ._1dJAGKEqrVhzZYCn-aUHzd{-webkit-transform:translateX(0);transform:translateX(0)}</style><style type="text/css">._37B8tiRP2xxQ72Q3APWGAm{background:#f4f5f7;border-radius:50%;color:#42526e;cursor:pointer;display:-webkit-box;display:flex;height:40px;-webkit-box-pack:center;justify-content:center;width:40px}._37B8tiRP2xxQ72Q3APWGAm:active{background:#deebff;color:#0052cc}._37B8tiRP2xxQ72Q3APWGAm ._3yFReS0vf5dMAG0LP-iijz{-webkit-box-align:center;align-items:center;display:-webkit-box;display:flex;-webkit-transform:translatex(-16px);transform:translatex(-16px);-webkit-transition:-webkit-transform .22s;transition:-webkit-transform .22s;transition:transform .22s;transition:transform .22s,-webkit-transform .22s}._37B8tiRP2xxQ72Q3APWGAm._3VUow_V3w0YRvwO4NsGWk2 ._3yFReS0vf5dMAG0LP-iijz{-webkit-transform:translateX(0);transform:translateX(0)}</style><style type="text/css">._79E2m4ync0DUg9dFqT3YD{color:#42526e;border-radius:3px}._79E2m4ync0DUg9dFqT3YD:hover{background:rgba(9,30,66,.04)}._79E2m4ync0DUg9dFqT3YD:active{background:#deebff;color:#0052cc}</style><style type="text/css">._141hfP0bXyT8WbGQTh_Zyf{padding:4px 0 0 24px}._1vxBlKneXF3t_P_janKAmE{display:-webkit-box;display:flex;color:#172b4d}._26piZLMgnmVx6upFZxACKm{border:0;color:inherit;-webkit-box-flex:1;flex-grow:1;font-size:1.4em;outline:0}.PfOBrPUsSZ2BFPf_Z0eLA{display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-pack:center;justify-content:center;margin-right:16px}._1O1b_doBex_Me1lcuVeBr4{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;margin:0;background:none;border:none;border-radius:50%;padding:0;width:32px;height:32px;outline:none;color:inherit}._1O1b_doBex_Me1lcuVeBr4:focus{outline:none;box-shadow:0 0 0 2px #4c9aff}._1O1b_doBex_Me1lcuVeBr4:hover{background:rgba(9,30,66,.04)}._1O1b_doBex_Me1lcuVeBr4:active{background:#deebff;color:#0052cc}._2OKsLEZHlF6MJwLi252zEX{margin-top:24px}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._2Et3MIbNLMCORTiLb2gXd4{display:inline-block;position:relative}._3QMsFPr4jvjG1OyLjAmgj4{height:24px;width:24px}._3QMsFPr4jvjG1OyLjAmgj4 .ihJBu0-s7ZptT94hq8V0q{right:-2px;height:12px;bottom:-2px;width:12px}._3QMsFPr4jvjG1OyLjAmgj4 .oOyWqV2E87LvM3suQ2iFc{border-width:2px}._3vUiJVFEynCJoj9-3W73bV{height:32px;width:32px}._3vUiJVFEynCJoj9-3W73bV .ihJBu0-s7ZptT94hq8V0q{right:-2px;height:12px;bottom:-2px;width:12px}._3vUiJVFEynCJoj9-3W73bV .oOyWqV2E87LvM3suQ2iFc{border-width:2px}.f7edYntBlGrxlpeX3raXp{height:48px;width:48px}.f7edYntBlGrxlpeX3raXp .ihJBu0-s7ZptT94hq8V0q{right:-3px;height:18px;bottom:-3px;width:18px}.f7edYntBlGrxlpeX3raXp .oOyWqV2E87LvM3suQ2iFc{border-width:3px}._3pRqGrNC_AxqAuDJhzIK0j{height:96px;width:96px}._3pRqGrNC_AxqAuDJhzIK0j .ihJBu0-s7ZptT94hq8V0q{right:6px;height:18px;bottom:6px;width:18px}._3pRqGrNC_AxqAuDJhzIK0j .oOyWqV2E87LvM3suQ2iFc{border-width:3px}._1up3rerj2w2gG91XkdrIFV{align-content:center;-webkit-box-align:middle;align-items:middle;background-color:#dfe1e6;border-radius:100%;display:-webkit-box;display:flex;height:100%;overflow:hidden;width:100%;-webkit-transform:translateZ(0);transform:translateZ(0)}._1up3rerj2w2gG91XkdrIFV img{height:100%;width:100%;display:none}._1up3rerj2w2gG91XkdrIFV.tEjNxwlr8czqGUFoebeLo{background-color:transparent}._1up3rerj2w2gG91XkdrIFV.tEjNxwlr8czqGUFoebeLo img{display:inline-block}.ihJBu0-s7ZptT94hq8V0q{position:absolute}.oOyWqV2E87LvM3suQ2iFc{align-content:center;-webkit-box-align:middle;align-items:middle;border:2px solid #fff;border-radius:100%;box-sizing:border-box;display:-webkit-box;display:flex;height:100%;overflow:hidden;width:100%}.oOyWqV2E87LvM3suQ2iFc:empty{display:none}._2ruo7J2Pojll2puNdJEz9b{display:none}</style><style type="text/css">.tnlUXhqUDJ9ScjwHRmVkD{-webkit-box-align:center;align-items:center;-ms-grid-row-align:center;align-self:center;flex-shrink:0;pointer-events:none;margin:0 4px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.f0bgVxRy6gZ2P44f39oce{align-self:center;display:-webkit-box;display:flex;line-height:0;font-size:0;margin:0 4px}.f0bgVxRy6gZ2P44f39oce:first-child:nth-last-child(1){margin:0 -2px}.f0bgVxRy6gZ2P44f39oce+.tnlUXhqUDJ9ScjwHRmVkD{-webkit-box-align:baseline;align-items:baseline;align-self:baseline}._1sROdOB52Dw37DvAtk8hJw{align-self:center;display:-webkit-inline-box;display:inline-flex;flex-wrap:nowrap;max-width:100%}._9HV8b45bDk4U7eNF6L9aa{-webkit-box-align:baseline;align-items:baseline;box-sizing:border-box;border-radius:3px;border-width:0;display:-webkit-inline-box;display:inline-flex;font-style:normal;font-size:inherit;height:2.28571429em;line-height:2.28571429em;margin:0;outline:none;padding:0 8px;text-align:center;-webkit-transition:background .1s ease-out,box-shadow .15s cubic-bezier(.47,.03,.49,1.38);transition:background .1s ease-out,box-shadow .15s cubic-bezier(.47,.03,.49,1.38);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;white-space:nowrap}._9HV8b45bDk4U7eNF6L9aa._2i4l25mWEO2mqGwYMPRSGh{height:1.71428571em;line-height:1.71428571em}._9HV8b45bDk4U7eNF6L9aa._10z6Qwuy48Z2b6n6-9negu{height:auto;line-height:normal;padding:0}._9HV8b45bDk4U7eNF6L9aa._10z6Qwuy48Z2b6n6-9negu .tnlUXhqUDJ9ScjwHRmVkD{margin:0}._9HV8b45bDk4U7eNF6L9aa._10z6Qwuy48Z2b6n6-9negu .f0bgVxRy6gZ2P44f39oce{margin:0}._9HV8b45bDk4U7eNF6L9aa::-moz-focus-inner{border:0;margin:0;padding:0}._9HV8b45bDk4U7eNF6L9aa:hover{cursor:pointer;-webkit-transition:background 0s ease-out,box-shadow .15s cubic-bezier(.47,.03,.49,1.38);transition:background 0s ease-out,box-shadow .15s cubic-bezier(.47,.03,.49,1.38)}._9HV8b45bDk4U7eNF6L9aa:active{-webkit-transition-duration:0s;transition-duration:0s}._9HV8b45bDk4U7eNF6L9aa:focus{outline:none;-webkit-transition-duration:0s,.2s;transition-duration:0s,.2s}._9HV8b45bDk4U7eNF6L9aa.lSeVXVFlXNAjcPIM5z3e1,._9HV8b45bDk4U7eNF6L9aa[disabled]{pointer-events:none;cursor:not-allowed}._3E3Kx2FaJ7HLaQFW7AsPwh._2Hme0EGdG_xX5KLHYzCpt5{background:rgba(9,30,66,.04);color:#505f79;text-decoration:none}._3E3Kx2FaJ7HLaQFW7AsPwh._2Hme0EGdG_xX5KLHYzCpt5 ._31jo7CHtR83PRe3q7Jo1IJ{background:rgba(9,30,66,.04);color:#505f79}._3E3Kx2FaJ7HLaQFW7AsPwh._2Hme0EGdG_xX5KLHYzCpt5 ._3DhBPHjyU7kFGAI5b932cA{background:rgba(9,30,66,.08)}._3E3Kx2FaJ7HLaQFW7AsPwh._2Hme0EGdG_xX5KLHYzCpt5 .BjG4BNCdnulFviOwmTjBW{background:rgba(179,212,255,.6);color:#0052cc}._3E3Kx2FaJ7HLaQFW7AsPwh._2Hme0EGdG_xX5KLHYzCpt5:hover{background:rgba(9,30,66,.08)}._3E3Kx2FaJ7HLaQFW7AsPwh._2Hme0EGdG_xX5KLHYzCpt5:active{background:rgba(179,212,255,.6);color:#0052cc}._3E3Kx2FaJ7HLaQFW7AsPwh._2Hme0EGdG_xX5KLHYzCpt5:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._3E3Kx2FaJ7HLaQFW7AsPwh._3_5733TleSeTJesbXU4aiA{background:none;color:#505f79;text-decoration:none}._3E3Kx2FaJ7HLaQFW7AsPwh._3_5733TleSeTJesbXU4aiA ._31jo7CHtR83PRe3q7Jo1IJ{background:none;color:#505f79}._3E3Kx2FaJ7HLaQFW7AsPwh._3_5733TleSeTJesbXU4aiA ._3DhBPHjyU7kFGAI5b932cA{background:rgba(9,30,66,.08)}._3E3Kx2FaJ7HLaQFW7AsPwh._3_5733TleSeTJesbXU4aiA .BjG4BNCdnulFviOwmTjBW{background:rgba(179,212,255,.6);color:#0052cc}._3E3Kx2FaJ7HLaQFW7AsPwh._3_5733TleSeTJesbXU4aiA:hover{background:rgba(9,30,66,.08)}._3E3Kx2FaJ7HLaQFW7AsPwh._3_5733TleSeTJesbXU4aiA:active{background:rgba(179,212,255,.6);color:#0052cc}._3E3Kx2FaJ7HLaQFW7AsPwh._3_5733TleSeTJesbXU4aiA:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._3E3Kx2FaJ7HLaQFW7AsPwh._2JhA7i-BP6-u9RQZBtIL4U{background:#0052cc;color:#fff;text-decoration:none}._3E3Kx2FaJ7HLaQFW7AsPwh._2JhA7i-BP6-u9RQZBtIL4U ._31jo7CHtR83PRe3q7Jo1IJ{background:#0052cc;color:#fff}._3E3Kx2FaJ7HLaQFW7AsPwh._2JhA7i-BP6-u9RQZBtIL4U ._3DhBPHjyU7kFGAI5b932cA{background:#0065ff}._3E3Kx2FaJ7HLaQFW7AsPwh._2JhA7i-BP6-u9RQZBtIL4U .BjG4BNCdnulFviOwmTjBW{background:#0049b0;color:#fff}._3E3Kx2FaJ7HLaQFW7AsPwh._2JhA7i-BP6-u9RQZBtIL4U:hover{background:#0065ff}._3E3Kx2FaJ7HLaQFW7AsPwh._2JhA7i-BP6-u9RQZBtIL4U:active{background:#0049b0;color:#fff}._3E3Kx2FaJ7HLaQFW7AsPwh._2JhA7i-BP6-u9RQZBtIL4U:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._3E3Kx2FaJ7HLaQFW7AsPwh._2JhA7i-BP6-u9RQZBtIL4U.lSeVXVFlXNAjcPIM5z3e1{background:#0052cc;color:hsla(0,0%,100%,.5);text-decoration:none}._3E3Kx2FaJ7HLaQFW7AsPwh._2JhA7i-BP6-u9RQZBtIL4U.lSeVXVFlXNAjcPIM5z3e1 ._31jo7CHtR83PRe3q7Jo1IJ{background:#0052cc;color:hsla(0,0%,100%,.5)}._3E3Kx2FaJ7HLaQFW7AsPwh._2JhA7i-BP6-u9RQZBtIL4U.lSeVXVFlXNAjcPIM5z3e1 ._3DhBPHjyU7kFGAI5b932cA{background:#0052cc}._3E3Kx2FaJ7HLaQFW7AsPwh._2JhA7i-BP6-u9RQZBtIL4U.lSeVXVFlXNAjcPIM5z3e1 .BjG4BNCdnulFviOwmTjBW{background:#0052cc;color:hsla(0,0%,100%,.5)}._3E3Kx2FaJ7HLaQFW7AsPwh._2JhA7i-BP6-u9RQZBtIL4U.lSeVXVFlXNAjcPIM5z3e1:hover{background:#0052cc}._3E3Kx2FaJ7HLaQFW7AsPwh._2JhA7i-BP6-u9RQZBtIL4U.lSeVXVFlXNAjcPIM5z3e1:active{background:#0052cc;color:hsla(0,0%,100%,.5)}._3E3Kx2FaJ7HLaQFW7AsPwh._2JhA7i-BP6-u9RQZBtIL4U.lSeVXVFlXNAjcPIM5z3e1:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._3E3Kx2FaJ7HLaQFW7AsPwh.lSeVXVFlXNAjcPIM5z3e1{background:rgba(9,30,66,.04);color:#a5adba;text-decoration:none}._3E3Kx2FaJ7HLaQFW7AsPwh.lSeVXVFlXNAjcPIM5z3e1 ._31jo7CHtR83PRe3q7Jo1IJ{background:rgba(9,30,66,.04);color:#a5adba}._3E3Kx2FaJ7HLaQFW7AsPwh.lSeVXVFlXNAjcPIM5z3e1 ._3DhBPHjyU7kFGAI5b932cA{background:rgba(9,30,66,.04)}._3E3Kx2FaJ7HLaQFW7AsPwh.lSeVXVFlXNAjcPIM5z3e1 .BjG4BNCdnulFviOwmTjBW{background:rgba(9,30,66,.04);color:#a5adba}._3E3Kx2FaJ7HLaQFW7AsPwh.lSeVXVFlXNAjcPIM5z3e1:hover{background:rgba(9,30,66,.04)}._3E3Kx2FaJ7HLaQFW7AsPwh.lSeVXVFlXNAjcPIM5z3e1:active{background:rgba(9,30,66,.04);color:#a5adba}._3E3Kx2FaJ7HLaQFW7AsPwh.lSeVXVFlXNAjcPIM5z3e1:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._3E3Kx2FaJ7HLaQFW7AsPwh._1u6UyLH_Ok-95oWBs285m1{background:#253858;color:#f4f5f7;text-decoration:none}._3E3Kx2FaJ7HLaQFW7AsPwh._1u6UyLH_Ok-95oWBs285m1 ._31jo7CHtR83PRe3q7Jo1IJ{background:#253858;color:#f4f5f7}._3E3Kx2FaJ7HLaQFW7AsPwh._1u6UyLH_Ok-95oWBs285m1 ._3DhBPHjyU7kFGAI5b932cA{background:#253858}._3E3Kx2FaJ7HLaQFW7AsPwh._1u6UyLH_Ok-95oWBs285m1 .BjG4BNCdnulFviOwmTjBW{background:#253858;color:#f4f5f7}._3E3Kx2FaJ7HLaQFW7AsPwh._1u6UyLH_Ok-95oWBs285m1:hover{background:#253858}._3E3Kx2FaJ7HLaQFW7AsPwh._1u6UyLH_Ok-95oWBs285m1:active{background:#253858;color:#f4f5f7}._3E3Kx2FaJ7HLaQFW7AsPwh._1u6UyLH_Ok-95oWBs285m1:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._3E3Kx2FaJ7HLaQFW7AsPwh.LqLNAXBwPBJlK6lFBZm6r{background:none;color:#0052cc;text-decoration:none}._3E3Kx2FaJ7HLaQFW7AsPwh.LqLNAXBwPBJlK6lFBZm6r ._31jo7CHtR83PRe3q7Jo1IJ{background:none;color:#0052cc}._3E3Kx2FaJ7HLaQFW7AsPwh.LqLNAXBwPBJlK6lFBZm6r ._3DhBPHjyU7kFGAI5b932cA{background:none;color:#0065ff;text-decoration:underline}._3E3Kx2FaJ7HLaQFW7AsPwh.LqLNAXBwPBJlK6lFBZm6r .BjG4BNCdnulFviOwmTjBW{text-decoration:none;background:none;color:#0049b0}._3E3Kx2FaJ7HLaQFW7AsPwh.LqLNAXBwPBJlK6lFBZm6r:hover{background:none;color:#0065ff;text-decoration:underline}._3E3Kx2FaJ7HLaQFW7AsPwh.LqLNAXBwPBJlK6lFBZm6r:active{text-decoration:none;background:none;color:#0049b0}._3E3Kx2FaJ7HLaQFW7AsPwh.LqLNAXBwPBJlK6lFBZm6r:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._3E3Kx2FaJ7HLaQFW7AsPwh.LqLNAXBwPBJlK6lFBZm6r.lSeVXVFlXNAjcPIM5z3e1{background:none;color:#a5adba;text-decoration:none}._3E3Kx2FaJ7HLaQFW7AsPwh.LqLNAXBwPBJlK6lFBZm6r.lSeVXVFlXNAjcPIM5z3e1 ._31jo7CHtR83PRe3q7Jo1IJ{background:none;color:#a5adba}._3E3Kx2FaJ7HLaQFW7AsPwh.LqLNAXBwPBJlK6lFBZm6r.lSeVXVFlXNAjcPIM5z3e1 ._3DhBPHjyU7kFGAI5b932cA{background:none}._3E3Kx2FaJ7HLaQFW7AsPwh.LqLNAXBwPBJlK6lFBZm6r.lSeVXVFlXNAjcPIM5z3e1 .BjG4BNCdnulFviOwmTjBW{background:none;color:#a5adba}._3E3Kx2FaJ7HLaQFW7AsPwh.LqLNAXBwPBJlK6lFBZm6r.lSeVXVFlXNAjcPIM5z3e1:hover{background:none}._3E3Kx2FaJ7HLaQFW7AsPwh.LqLNAXBwPBJlK6lFBZm6r.lSeVXVFlXNAjcPIM5z3e1:active{background:none;color:#a5adba}._3E3Kx2FaJ7HLaQFW7AsPwh.LqLNAXBwPBJlK6lFBZm6r.lSeVXVFlXNAjcPIM5z3e1:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._3E3Kx2FaJ7HLaQFW7AsPwh.iCrVjOOvVYWMW2_1e5oiG{background:none;color:#7a869a;text-decoration:none}._3E3Kx2FaJ7HLaQFW7AsPwh.iCrVjOOvVYWMW2_1e5oiG ._31jo7CHtR83PRe3q7Jo1IJ{background:none;color:#7a869a}._3E3Kx2FaJ7HLaQFW7AsPwh.iCrVjOOvVYWMW2_1e5oiG ._3DhBPHjyU7kFGAI5b932cA{background:none;color:#0065ff;text-decoration:underline}._3E3Kx2FaJ7HLaQFW7AsPwh.iCrVjOOvVYWMW2_1e5oiG .BjG4BNCdnulFviOwmTjBW{text-decoration:none;background:none;color:#0049b0}._3E3Kx2FaJ7HLaQFW7AsPwh.iCrVjOOvVYWMW2_1e5oiG:hover{background:none;color:#0065ff;text-decoration:underline}._3E3Kx2FaJ7HLaQFW7AsPwh.iCrVjOOvVYWMW2_1e5oiG:active{text-decoration:none;background:none;color:#0049b0}._3E3Kx2FaJ7HLaQFW7AsPwh.iCrVjOOvVYWMW2_1e5oiG:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._3E3Kx2FaJ7HLaQFW7AsPwh.iCrVjOOvVYWMW2_1e5oiG.lSeVXVFlXNAjcPIM5z3e1{background:none;color:#a5adba;text-decoration:none}._3E3Kx2FaJ7HLaQFW7AsPwh.iCrVjOOvVYWMW2_1e5oiG.lSeVXVFlXNAjcPIM5z3e1 ._31jo7CHtR83PRe3q7Jo1IJ{background:none;color:#a5adba}._3E3Kx2FaJ7HLaQFW7AsPwh.iCrVjOOvVYWMW2_1e5oiG.lSeVXVFlXNAjcPIM5z3e1 ._3DhBPHjyU7kFGAI5b932cA{background:none}._3E3Kx2FaJ7HLaQFW7AsPwh.iCrVjOOvVYWMW2_1e5oiG.lSeVXVFlXNAjcPIM5z3e1 .BjG4BNCdnulFviOwmTjBW{background:none;color:#a5adba}._3E3Kx2FaJ7HLaQFW7AsPwh.iCrVjOOvVYWMW2_1e5oiG.lSeVXVFlXNAjcPIM5z3e1:hover{background:none}._3E3Kx2FaJ7HLaQFW7AsPwh.iCrVjOOvVYWMW2_1e5oiG.lSeVXVFlXNAjcPIM5z3e1:active{background:none;color:#a5adba}._3E3Kx2FaJ7HLaQFW7AsPwh.iCrVjOOvVYWMW2_1e5oiG.lSeVXVFlXNAjcPIM5z3e1:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._1k_hK5ei6ptNsFZQB67kh3._2Hme0EGdG_xX5KLHYzCpt5{background:hsla(0,0%,100%,.08);color:#fff;text-decoration:none}._1k_hK5ei6ptNsFZQB67kh3._2Hme0EGdG_xX5KLHYzCpt5 ._31jo7CHtR83PRe3q7Jo1IJ{background:hsla(0,0%,100%,.08);color:#fff}._1k_hK5ei6ptNsFZQB67kh3._2Hme0EGdG_xX5KLHYzCpt5 ._3DhBPHjyU7kFGAI5b932cA{background:hsla(0,0%,100%,.12)}._1k_hK5ei6ptNsFZQB67kh3._2Hme0EGdG_xX5KLHYzCpt5 .BjG4BNCdnulFviOwmTjBW{background:rgba(76,154,255,.32);color:#fff}._1k_hK5ei6ptNsFZQB67kh3._2Hme0EGdG_xX5KLHYzCpt5:hover{background:hsla(0,0%,100%,.12)}._1k_hK5ei6ptNsFZQB67kh3._2Hme0EGdG_xX5KLHYzCpt5:active{background:rgba(76,154,255,.32);color:#fff}._1k_hK5ei6ptNsFZQB67kh3._2Hme0EGdG_xX5KLHYzCpt5:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._1k_hK5ei6ptNsFZQB67kh3._3_5733TleSeTJesbXU4aiA{background:none;color:#fff;text-decoration:none}._1k_hK5ei6ptNsFZQB67kh3._3_5733TleSeTJesbXU4aiA ._31jo7CHtR83PRe3q7Jo1IJ{background:none;color:#fff}._1k_hK5ei6ptNsFZQB67kh3._3_5733TleSeTJesbXU4aiA ._3DhBPHjyU7kFGAI5b932cA{background:hsla(0,0%,100%,.12)}._1k_hK5ei6ptNsFZQB67kh3._3_5733TleSeTJesbXU4aiA .BjG4BNCdnulFviOwmTjBW{background:rgba(76,154,255,.32);color:#fff}._1k_hK5ei6ptNsFZQB67kh3._3_5733TleSeTJesbXU4aiA:hover{background:hsla(0,0%,100%,.12)}._1k_hK5ei6ptNsFZQB67kh3._3_5733TleSeTJesbXU4aiA:active{background:rgba(76,154,255,.32);color:#fff}._1k_hK5ei6ptNsFZQB67kh3._3_5733TleSeTJesbXU4aiA:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._1k_hK5ei6ptNsFZQB67kh3._2JhA7i-BP6-u9RQZBtIL4U{background:#2684ff;color:#fff;text-decoration:none}._1k_hK5ei6ptNsFZQB67kh3._2JhA7i-BP6-u9RQZBtIL4U ._31jo7CHtR83PRe3q7Jo1IJ{background:#2684ff;color:#fff}._1k_hK5ei6ptNsFZQB67kh3._2JhA7i-BP6-u9RQZBtIL4U ._3DhBPHjyU7kFGAI5b932cA{background:#0065ff}._1k_hK5ei6ptNsFZQB67kh3._2JhA7i-BP6-u9RQZBtIL4U .BjG4BNCdnulFviOwmTjBW{background:#0052cc;color:#fff}._1k_hK5ei6ptNsFZQB67kh3._2JhA7i-BP6-u9RQZBtIL4U:hover{background:#0065ff}._1k_hK5ei6ptNsFZQB67kh3._2JhA7i-BP6-u9RQZBtIL4U:active{background:#0052cc;color:#fff}._1k_hK5ei6ptNsFZQB67kh3._2JhA7i-BP6-u9RQZBtIL4U:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._1k_hK5ei6ptNsFZQB67kh3._2JhA7i-BP6-u9RQZBtIL4U.lSeVXVFlXNAjcPIM5z3e1{background:#0052cc;color:hsla(0,0%,100%,.5);text-decoration:none}._1k_hK5ei6ptNsFZQB67kh3._2JhA7i-BP6-u9RQZBtIL4U.lSeVXVFlXNAjcPIM5z3e1 ._31jo7CHtR83PRe3q7Jo1IJ{background:#0052cc;color:hsla(0,0%,100%,.5)}._1k_hK5ei6ptNsFZQB67kh3._2JhA7i-BP6-u9RQZBtIL4U.lSeVXVFlXNAjcPIM5z3e1 ._3DhBPHjyU7kFGAI5b932cA{background:#0052cc}._1k_hK5ei6ptNsFZQB67kh3._2JhA7i-BP6-u9RQZBtIL4U.lSeVXVFlXNAjcPIM5z3e1 .BjG4BNCdnulFviOwmTjBW{background:#0052cc;color:hsla(0,0%,100%,.5)}._1k_hK5ei6ptNsFZQB67kh3._2JhA7i-BP6-u9RQZBtIL4U.lSeVXVFlXNAjcPIM5z3e1:hover{background:#0052cc}._1k_hK5ei6ptNsFZQB67kh3._2JhA7i-BP6-u9RQZBtIL4U.lSeVXVFlXNAjcPIM5z3e1:active{background:#0052cc;color:hsla(0,0%,100%,.5)}._1k_hK5ei6ptNsFZQB67kh3._2JhA7i-BP6-u9RQZBtIL4U.lSeVXVFlXNAjcPIM5z3e1:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._1k_hK5ei6ptNsFZQB67kh3.lSeVXVFlXNAjcPIM5z3e1{background:hsla(0,0%,100%,.04);color:#7a869a;text-decoration:none}._1k_hK5ei6ptNsFZQB67kh3.lSeVXVFlXNAjcPIM5z3e1 ._31jo7CHtR83PRe3q7Jo1IJ{background:hsla(0,0%,100%,.04);color:#7a869a}._1k_hK5ei6ptNsFZQB67kh3.lSeVXVFlXNAjcPIM5z3e1 ._3DhBPHjyU7kFGAI5b932cA{background:hsla(0,0%,100%,.04)}._1k_hK5ei6ptNsFZQB67kh3.lSeVXVFlXNAjcPIM5z3e1 .BjG4BNCdnulFviOwmTjBW{background:hsla(0,0%,100%,.04);color:#7a869a}._1k_hK5ei6ptNsFZQB67kh3.lSeVXVFlXNAjcPIM5z3e1:hover{background:hsla(0,0%,100%,.04)}._1k_hK5ei6ptNsFZQB67kh3.lSeVXVFlXNAjcPIM5z3e1:active{background:hsla(0,0%,100%,.04);color:#7a869a}._1k_hK5ei6ptNsFZQB67kh3.lSeVXVFlXNAjcPIM5z3e1:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._1k_hK5ei6ptNsFZQB67kh3._1u6UyLH_Ok-95oWBs285m1{background:#f4f5f7;color:#253858;text-decoration:none}._1k_hK5ei6ptNsFZQB67kh3._1u6UyLH_Ok-95oWBs285m1 ._31jo7CHtR83PRe3q7Jo1IJ{background:#f4f5f7;color:#253858}._1k_hK5ei6ptNsFZQB67kh3._1u6UyLH_Ok-95oWBs285m1 ._3DhBPHjyU7kFGAI5b932cA{background:#f4f5f7}._1k_hK5ei6ptNsFZQB67kh3._1u6UyLH_Ok-95oWBs285m1 .BjG4BNCdnulFviOwmTjBW{background:#f4f5f7;color:#253858}._1k_hK5ei6ptNsFZQB67kh3._1u6UyLH_Ok-95oWBs285m1:hover{background:#f4f5f7}._1k_hK5ei6ptNsFZQB67kh3._1u6UyLH_Ok-95oWBs285m1:active{background:#f4f5f7;color:#253858}._1k_hK5ei6ptNsFZQB67kh3._1u6UyLH_Ok-95oWBs285m1:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._1k_hK5ei6ptNsFZQB67kh3.LqLNAXBwPBJlK6lFBZm6r{background:none;color:#b3d4ff;text-decoration:none}._1k_hK5ei6ptNsFZQB67kh3.LqLNAXBwPBJlK6lFBZm6r ._31jo7CHtR83PRe3q7Jo1IJ{background:none;color:#b3d4ff}._1k_hK5ei6ptNsFZQB67kh3.LqLNAXBwPBJlK6lFBZm6r ._3DhBPHjyU7kFGAI5b932cA{background:none;color:#deebff;text-decoration:underline}._1k_hK5ei6ptNsFZQB67kh3.LqLNAXBwPBJlK6lFBZm6r .BjG4BNCdnulFviOwmTjBW{background:none;text-decoration:underline;color:#4c9aff}._1k_hK5ei6ptNsFZQB67kh3.LqLNAXBwPBJlK6lFBZm6r:hover{background:none;color:#deebff;text-decoration:underline}._1k_hK5ei6ptNsFZQB67kh3.LqLNAXBwPBJlK6lFBZm6r:active{background:none;text-decoration:underline;color:#4c9aff}._1k_hK5ei6ptNsFZQB67kh3.LqLNAXBwPBJlK6lFBZm6r:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._1k_hK5ei6ptNsFZQB67kh3.LqLNAXBwPBJlK6lFBZm6r.lSeVXVFlXNAjcPIM5z3e1{background:none;color:#7a869a;text-decoration:none}._1k_hK5ei6ptNsFZQB67kh3.LqLNAXBwPBJlK6lFBZm6r.lSeVXVFlXNAjcPIM5z3e1 ._31jo7CHtR83PRe3q7Jo1IJ{background:none;color:#7a869a}._1k_hK5ei6ptNsFZQB67kh3.LqLNAXBwPBJlK6lFBZm6r.lSeVXVFlXNAjcPIM5z3e1 ._3DhBPHjyU7kFGAI5b932cA{background:none}._1k_hK5ei6ptNsFZQB67kh3.LqLNAXBwPBJlK6lFBZm6r.lSeVXVFlXNAjcPIM5z3e1 .BjG4BNCdnulFviOwmTjBW{background:none;color:#7a869a}._1k_hK5ei6ptNsFZQB67kh3.LqLNAXBwPBJlK6lFBZm6r.lSeVXVFlXNAjcPIM5z3e1:hover{background:none}._1k_hK5ei6ptNsFZQB67kh3.LqLNAXBwPBJlK6lFBZm6r.lSeVXVFlXNAjcPIM5z3e1:active{background:none;color:#7a869a}._1k_hK5ei6ptNsFZQB67kh3.LqLNAXBwPBJlK6lFBZm6r.lSeVXVFlXNAjcPIM5z3e1:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._1k_hK5ei6ptNsFZQB67kh3.iCrVjOOvVYWMW2_1e5oiG{background:none;color:#fff;text-decoration:none}._1k_hK5ei6ptNsFZQB67kh3.iCrVjOOvVYWMW2_1e5oiG ._31jo7CHtR83PRe3q7Jo1IJ{background:none;color:#fff}._1k_hK5ei6ptNsFZQB67kh3.iCrVjOOvVYWMW2_1e5oiG ._3DhBPHjyU7kFGAI5b932cA{background:none;color:#deebff;text-decoration:underline}._1k_hK5ei6ptNsFZQB67kh3.iCrVjOOvVYWMW2_1e5oiG .BjG4BNCdnulFviOwmTjBW{background:none;text-decoration:underline;color:#4c9aff}._1k_hK5ei6ptNsFZQB67kh3.iCrVjOOvVYWMW2_1e5oiG:hover{background:none;color:#deebff;text-decoration:underline}._1k_hK5ei6ptNsFZQB67kh3.iCrVjOOvVYWMW2_1e5oiG:active{background:none;text-decoration:underline;color:#4c9aff}._1k_hK5ei6ptNsFZQB67kh3.iCrVjOOvVYWMW2_1e5oiG:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}._1k_hK5ei6ptNsFZQB67kh3.iCrVjOOvVYWMW2_1e5oiG.lSeVXVFlXNAjcPIM5z3e1{background:none;color:#7a869a;text-decoration:none}._1k_hK5ei6ptNsFZQB67kh3.iCrVjOOvVYWMW2_1e5oiG.lSeVXVFlXNAjcPIM5z3e1 ._31jo7CHtR83PRe3q7Jo1IJ{background:none;color:#7a869a}._1k_hK5ei6ptNsFZQB67kh3.iCrVjOOvVYWMW2_1e5oiG.lSeVXVFlXNAjcPIM5z3e1 ._3DhBPHjyU7kFGAI5b932cA{background:none}._1k_hK5ei6ptNsFZQB67kh3.iCrVjOOvVYWMW2_1e5oiG.lSeVXVFlXNAjcPIM5z3e1 .BjG4BNCdnulFviOwmTjBW{background:none;color:#7a869a}._1k_hK5ei6ptNsFZQB67kh3.iCrVjOOvVYWMW2_1e5oiG.lSeVXVFlXNAjcPIM5z3e1:hover{background:none}._1k_hK5ei6ptNsFZQB67kh3.iCrVjOOvVYWMW2_1e5oiG.lSeVXVFlXNAjcPIM5z3e1:active{background:none;color:#7a869a}._1k_hK5ei6ptNsFZQB67kh3.iCrVjOOvVYWMW2_1e5oiG.lSeVXVFlXNAjcPIM5z3e1:focus{box-shadow:0 0 0 2px rgba(38,132,255,.6)}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._2N3bkxQJOituyn4HygdN9-{background:#fff;border-radius:3px;box-shadow:0 4px 8px -2px rgba(9,30,66,.25),0 0 1px rgba(9,30,66,.31);box-sizing:border-box;overflow:auto;padding:4px 0}._3AW7FlCOzRYPfqV0hExEI_{display:-webkit-inline-box;display:inline-flex}.k0s9ZZsdeYrZ6ASYPpu1I{display:block;-webkit-box-flex:1;flex:1 1 auto}.a_tjdvrW1cCqVJrRV4tiX{box-sizing:border-box;display:block;margin-top:8px}.a_tjdvrW1cCqVJrRV4tiX:first-child{margin-top:0}._2dcSqWT6xphefBK-3NVFv-{-webkit-box-align:baseline;align-items:baseline;color:#5e6c84;display:-webkit-box;display:flex;-webkit-box-flex:1;flex:1 1 auto;font-weight:400;font-size:14px;line-height:1;margin:0;padding:8px 12px}._3dgCFcV7ko4G4kEIwOTDo4{-webkit-box-flex:0;flex:0 0 auto}._13lnAb44nm5jtXs7YcJAQn{-webkit-box-flex:1;flex:1 1 auto;font-size:12px;text-transform:uppercase}.jwa5vC4SbVrdBooL0BPNr{-webkit-box-align:center;align-items:center;display:-webkit-box;display:flex;flex-wrap:nowrap;box-sizing:border-box;font-size:14px;font-weight:400;line-height:1;padding:0 12px;text-decoration:none;color:#172b4d;cursor:pointer}.jwa5vC4SbVrdBooL0BPNr:hover{background-color:#f4f5f7;text-decoration:none;color:#172b4d}.jwa5vC4SbVrdBooL0BPNr:hover ._1C5Hj8lkd6g7lCpq5p6yrX{color:#c1c7d0;fill:transparent}.jwa5vC4SbVrdBooL0BPNr:hover.YZ1aCQL_uPlEd48keiX97 ._1C5Hj8lkd6g7lCpq5p6yrX{color:#0052cc;fill:#fff}.jwa5vC4SbVrdBooL0BPNr:hover._3KGMF6AfhflVsmdLdb61w_{background-color:#fff}.jwa5vC4SbVrdBooL0BPNr:active{background-color:#b3d4ff;color:#172b4d}.jwa5vC4SbVrdBooL0BPNr:active ._1C5Hj8lkd6g7lCpq5p6yrX{color:#2684ff;fill:transparent}.jwa5vC4SbVrdBooL0BPNr:active.YZ1aCQL_uPlEd48keiX97 ._1C5Hj8lkd6g7lCpq5p6yrX{color:#2684ff;fill:#fff}.jwa5vC4SbVrdBooL0BPNr.uTekRo0ecbUTuZVmwE5fo{display:none}.jwa5vC4SbVrdBooL0BPNr.YZ1aCQL_uPlEd48keiX97 ._1C5Hj8lkd6g7lCpq5p6yrX{color:#0052cc;fill:#fff}.jwa5vC4SbVrdBooL0BPNr._3RqAQ9oVBbPlOKAeQeuvEg,.jwa5vC4SbVrdBooL0BPNr:focus{box-shadow:inset 0 0 0 2px #4c9aff;outline:none;outline-offset:0;position:relative}.jwa5vC4SbVrdBooL0BPNr._5-gLwSK3fS9T1jRyuaHRR{background-color:#6c798f;color:#fff}.jwa5vC4SbVrdBooL0BPNr._3KGMF6AfhflVsmdLdb61w_{color:#a5adba;cursor:not-allowed}.jwa5vC4SbVrdBooL0BPNr._3KGMF6AfhflVsmdLdb61w_ ._1C5Hj8lkd6g7lCpq5p6yrX{color:#f4f5f7;fill:transparent}.jwa5vC4SbVrdBooL0BPNr._3KGMF6AfhflVsmdLdb61w_.YZ1aCQL_uPlEd48keiX97 ._1C5Hj8lkd6g7lCpq5p6yrX{color:#344563;fill:#253858}._1TKXWeeRDrCDkCa4Exqi6c{display:-webkit-box;display:flex}._1UfHj3nLHAksUxhZtIpK1E{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center}._1C5Hj8lkd6g7lCpq5p6yrX{margin:0 8px;display:-webkit-box;display:flex;color:#dfe1e6;fill:#dfe1e6}._1C5Hj8lkd6g7lCpq5p6yrX+._17f0jyf9ABhe3il3Kh1Xtc{margin:0}._17f0jyf9ABhe3il3Kh1Xtc{-webkit-box-flex:1;flex:1 1 auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin:0 8px;padding:9px 0}._17f0jyf9ABhe3il3Kh1Xtc:first-child{margin:0}._2nWlQQ2LbEtIHnU8Wbnp5H{color:#6c798f}._33xYkJbA7ramskd087_xT3{display:-webkit-inline-box;display:inline-flex}.alBHhVrXKFRYg9Iv3Wjg0{display:-webkit-inline-box;display:inline-flex;-webkit-transition:box-shadow .15s cubic-bezier(.47,.03,.49,1.38);transition:box-shadow .15s cubic-bezier(.47,.03,.49,1.38);-webkit-transition-duration:.2s;transition-duration:.2s;cursor:pointer}._3ZyTieMVQuD-10VdVK0MTN{-webkit-box-flex:1;flex:1 1 auto}._3ZyTieMVQuD-10VdVK0MTN.alBHhVrXKFRYg9Iv3Wjg0{display:block;box-sizing:border-box}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._2MPkrEz7lUNdqAICvWwzll{-webkit-animation:_3wFgROR2UQVWyKNIgXygoi .53s ease-in-out;animation:_3wFgROR2UQVWyKNIgXygoi .53s ease-in-out;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}._3n7IJCv-B9PbIUjRYR-7hw{-webkit-animation:_1W-dWTbQH84FZFU63y_3CA .86s infinite;animation:_1W-dWTbQH84FZFU63y_3CA .86s infinite;-webkit-animation-timing-function:cubic-bezier(.4,.15,.6,.85);animation-timing-function:cubic-bezier(.4,.15,.6,.85);display:-webkit-inline-box;display:inline-flex}._2MPkrEz7lUNdqAICvWwzll ._11GO3e2ogxhAdfq8XoZ8OE{-webkit-transition:stroke-dashoffset .8s ease-in-out,opacity .2s ease-in-out .45s;transition:stroke-dashoffset .8s ease-in-out,opacity .2s ease-in-out .45s;opacity:0;-webkit-transform-origin:center;transform-origin:center;stroke:#42526e}._2MPkrEz7lUNdqAICvWwzll._1VLuO4ZVZiSGp33sHqJ0ZD{opacity:0}._2MPkrEz7lUNdqAICvWwzll._3v4x5dSK6CejdL9b9rUACg{-webkit-animation:_3eKfMml8X1KeisubfSzeJ2 1s ease-in-out forwards;animation:_3eKfMml8X1KeisubfSzeJ2 1s ease-in-out forwards}._2MPkrEz7lUNdqAICvWwzll._3v4x5dSK6CejdL9b9rUACg ._11GO3e2ogxhAdfq8XoZ8OE{opacity:1;-webkit-transition:stroke-dashoffset .8s ease-in-out,opacity .2s ease-in-out;transition:stroke-dashoffset .8s ease-in-out,opacity .2s ease-in-out}@-webkit-keyframes _1W-dWTbQH84FZFU63y_3CA{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes _1W-dWTbQH84FZFU63y_3CA{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@-webkit-keyframes _3eKfMml8X1KeisubfSzeJ2{0%{-webkit-transform:rotate(50deg);transform:rotate(50deg)}to{-webkit-transform:rotate(230deg);transform:rotate(230deg)}}@keyframes _3eKfMml8X1KeisubfSzeJ2{0%{-webkit-transform:rotate(50deg);transform:rotate(50deg)}to{-webkit-transform:rotate(230deg);transform:rotate(230deg)}}@-webkit-keyframes _3wFgROR2UQVWyKNIgXygoi{0%{-webkit-transform:rotate(230deg);transform:rotate(230deg)}to{-webkit-transform:rotate(510deg);transform:rotate(510deg)}}@keyframes _3wFgROR2UQVWyKNIgXygoi{0%{-webkit-transform:rotate(230deg);transform:rotate(230deg)}to{-webkit-transform:rotate(510deg);transform:rotate(510deg)}}</style><style type="text/css">._1005gN-xPiTv1mbmIqtvSQ{padding:9px 7px;background-color:#fafbfc;border:1px solid #f4f5f7;border-radius:5px;box-sizing:border-box;display:-webkit-box;display:flex;-webkit-box-flex:0;flex:0 1 auto;font-size:14px;-webkit-box-pack:justify;justify-content:space-between;line-height:1.42857143;max-width:100%;min-height:20px;overflow:hidden;-webkit-transition:background-color .2s ease-in-out,border-color .2s ease-in-out;transition:background-color .2s ease-in-out,border-color .2s ease-in-out;word-wrap:break-word}._1005gN-xPiTv1mbmIqtvSQ._3ySeKUwKNgtz9k33JEquYE{padding:0}._1005gN-xPiTv1mbmIqtvSQ ._3muH_8LU8Ou-tvqBSdQcEN{background-color:#f4f5f7;border-color:rgba(9,30,66,.04);color:#b3bac5;pointer-events:none}._1005gN-xPiTv1mbmIqtvSQ._1iPSp7lCoEyd7uAJx2sE42{-webkit-box-flex:1;flex:1 1 auto}._1005gN-xPiTv1mbmIqtvSQ._2rCfb_0cH2DuhCkqbAbxij{border-width:1px;padding:5px 7px}._1005gN-xPiTv1mbmIqtvSQ._2rCfb_0cH2DuhCkqbAbxij._3ySeKUwKNgtz9k33JEquYE{padding:0}._1005gN-xPiTv1mbmIqtvSQ._2rCfb_0cH2DuhCkqbAbxij ._3ZDdVJqrwNDra9YI4sUEeO{background-color:#f4f5f7;border-color:rgba(9,30,66,.04);color:#b3bac5;pointer-events:none}._1005gN-xPiTv1mbmIqtvSQ.XoBxj--eypmooOPsTWv6a{border-width:0;padding:10px 8px;background-color:transparent}._1005gN-xPiTv1mbmIqtvSQ.XoBxj--eypmooOPsTWv6a._3ySeKUwKNgtz9k33JEquYE{padding:0}._1005gN-xPiTv1mbmIqtvSQ.GYgiPFHXGmAdlkpbekb91{background-color:transparent;border:none}._1005gN-xPiTv1mbmIqtvSQ:not(.GYgiPFHXGmAdlkpbekb91):hover:not(._3K2MdiHGszhbZpwbje2N08){background-color:#f4f5f7;border-color:#f4f5f7}._1005gN-xPiTv1mbmIqtvSQ:not(.GYgiPFHXGmAdlkpbekb91)._3ZDdVJqrwNDra9YI4sUEeO{background-color:#f4f5f7;border-color:rgba(9,30,66,.04);color:#b3bac5;pointer-events:none}._1005gN-xPiTv1mbmIqtvSQ:not(.GYgiPFHXGmAdlkpbekb91)._1CeKNZJxS3N6Vg7nX__M6g:not(._3K2MdiHGszhbZpwbje2N08){border-width:2px;padding:8px 6px;background-color:#fff;border-color:#4c9aff}._1005gN-xPiTv1mbmIqtvSQ:not(.GYgiPFHXGmAdlkpbekb91)._1CeKNZJxS3N6Vg7nX__M6g:not(._3K2MdiHGszhbZpwbje2N08)._3ySeKUwKNgtz9k33JEquYE{padding:0}._1005gN-xPiTv1mbmIqtvSQ:not(.GYgiPFHXGmAdlkpbekb91)._1CeKNZJxS3N6Vg7nX__M6g:not(._3K2MdiHGszhbZpwbje2N08)._2rCfb_0cH2DuhCkqbAbxij{border-width:2px;padding:4px 6px}._1005gN-xPiTv1mbmIqtvSQ:not(.GYgiPFHXGmAdlkpbekb91)._1CeKNZJxS3N6Vg7nX__M6g:not(._3K2MdiHGszhbZpwbje2N08)._2rCfb_0cH2DuhCkqbAbxij._3ySeKUwKNgtz9k33JEquYE{padding:0}._1005gN-xPiTv1mbmIqtvSQ:not(.GYgiPFHXGmAdlkpbekb91)._1CeKNZJxS3N6Vg7nX__M6g:not(._3K2MdiHGszhbZpwbje2N08).XoBxj--eypmooOPsTWv6a._3ySeKUwKNgtz9k33JEquYE{margin:-2px}._1005gN-xPiTv1mbmIqtvSQ:not(.GYgiPFHXGmAdlkpbekb91)._1CeKNZJxS3N6Vg7nX__M6g:not(._3K2MdiHGszhbZpwbje2N08)._3ySeKUwKNgtz9k33JEquYE{margin:-1px}._1005gN-xPiTv1mbmIqtvSQ:not(.GYgiPFHXGmAdlkpbekb91)._3etBuX5Q53xnC-GRSvgOT{border-width:2px;padding:8px 6px;border-color:#ff8f73}._1005gN-xPiTv1mbmIqtvSQ:not(.GYgiPFHXGmAdlkpbekb91)._3etBuX5Q53xnC-GRSvgOT._3ySeKUwKNgtz9k33JEquYE{padding:0}._1005gN-xPiTv1mbmIqtvSQ:not(.GYgiPFHXGmAdlkpbekb91)._3etBuX5Q53xnC-GRSvgOT._3ZDdVJqrwNDra9YI4sUEeO{background-color:#f4f5f7;border-color:rgba(9,30,66,.04);color:#b3bac5;pointer-events:none}._1005gN-xPiTv1mbmIqtvSQ:not(.GYgiPFHXGmAdlkpbekb91)._3etBuX5Q53xnC-GRSvgOT._3ZDdVJqrwNDra9YI4sUEeO ._2QAhk1wqq4rkO1nlIibc9C{background-color:#f4f5f7;border-color:rgba(9,30,66,.04);color:#b3bac5;pointer-events:none}._1005gN-xPiTv1mbmIqtvSQ:not(.GYgiPFHXGmAdlkpbekb91)._3etBuX5Q53xnC-GRSvgOT._2rCfb_0cH2DuhCkqbAbxij{border-width:2px;padding:4px 6px}._1005gN-xPiTv1mbmIqtvSQ:not(.GYgiPFHXGmAdlkpbekb91)._3etBuX5Q53xnC-GRSvgOT._2rCfb_0cH2DuhCkqbAbxij._3ySeKUwKNgtz9k33JEquYE{padding:0}._1005gN-xPiTv1mbmIqtvSQ:not(.GYgiPFHXGmAdlkpbekb91)._3etBuX5Q53xnC-GRSvgOT:hover{background-color:transparent;border-color:#ff8f73}._1005gN-xPiTv1mbmIqtvSQ:not(.GYgiPFHXGmAdlkpbekb91)._3etBuX5Q53xnC-GRSvgOT._3ySeKUwKNgtz9k33JEquYE{margin:-1px}._1uEIv4jRcyt9ke6xJsbHrt{-webkit-box-align:center;align-items:center;display:-webkit-box;display:flex;max-width:100%}._1uEIv4jRcyt9ke6xJsbHrt._1iPSp7lCoEyd7uAJx2sE42{-webkit-box-flex:1;flex:1 1 auto}._1uEIv4jRcyt9ke6xJsbHrt._3ZDdVJqrwNDra9YI4sUEeO{cursor:not-allowed}._2QAhk1wqq4rkO1nlIibc9C{-webkit-box-align:center;align-items:center;color:#ff8f73;display:-webkit-box;display:flex;padding-left:8px;padding-right:4px}._3t45xNumjE3LImvnskVp2n{display:block}._2Wv7PlvIKHDAUM16sBQPl7{color:#6c798f;font-size:12px;line-height:1;padding:0;margin-bottom:4px;margin-top:20px}._2Wv7PlvIKHDAUM16sBQPl7._1_kJsdMBfwxgTofUnKRcgg{margin-top:0}._2Wv7PlvIKHDAUM16sBQPl7._3mmkxzSjpOp1WoRe2g8u-O{font-weight:600;line-height:1.33333333;padding:8px 0 0 8px;margin-bottom:0;margin-top:0}._2WsHUIAPpE2SVaMNiDoGMK{display:none}._2yKMCJsLJAFfIrCHT-M9re{padding-left:2px}</style><style type="text/css">._2tGgVD7noDhRqBIDyJ5PK6{background:transparent;border:0;box-sizing:border-box;color:inherit;cursor:inherit;font-size:14px;outline:none;width:100%}._2tGgVD7noDhRqBIDyJ5PK6:invalid{box-shadow:none}</style><style type="text/css">._1FcDA7aKdYGnqon66EBy12{bottom:0;left:0;position:fixed;right:0;top:0;z-index:500}.XAEd_Ktk2PwuRiyBjKdfc{background:#091e42;opacity:.5}</style><style type="text/css">._1TSxmTpgq_iBbsmFnr4umq{height:100%;left:0;position:fixed;top:0;width:100%;z-index:500}._24VAejaPiq1J4_4L8yeTg3{display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;max-width:calc(100% - 120px);margin:0 auto;height:calc(100% - 120px);margin-top:60px;position:relative;z-index:510}._24VAejaPiq1J4_4L8yeTg3._7PO5jWajOBBEpteWSiDUz{width:400px}._24VAejaPiq1J4_4L8yeTg3.GZpMeKtvtrodrL94HlMMF{width:600px}._24VAejaPiq1J4_4L8yeTg3._2xcaeI7T_ltl2BSjYeh497{width:800px}._24VAejaPiq1J4_4L8yeTg3._6Fr8xQ5BgHW--N4eU_kQL{width:968px}._24VAejaPiq1J4_4L8yeTg3 .cJCTwzV1UzeffjSbMb_v7{-webkit-box-flex:0;flex:0 0 auto;padding:16px;box-shadow:0 0 0 transparent,0 0 0 transparent;background-color:#fff;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-left-radius:0;border-bottom-right-radius:0}._24VAejaPiq1J4_4L8yeTg3 ._13CfchAlTGUcQ3Pms2Ti32{-webkit-box-flex:0;flex:0 1 auto;overflow:auto;box-sizing:border-box;padding:0 16px;position:relative;box-shadow:inset 0 2px 0 0 #ebecf0,inset 0 -2px 0 0 #ebecf0;background-color:#fff;border-top-left-radius:0;border-top-right-radius:0;border-bottom-left-radius:0;border-bottom-right-radius:0}._24VAejaPiq1J4_4L8yeTg3 ._13CfchAlTGUcQ3Pms2Ti32:before{background:#fff;content:"";display:block;height:2px;left:0;position:absolute;right:0;top:0}._24VAejaPiq1J4_4L8yeTg3 ._13CfchAlTGUcQ3Pms2Ti32:after{background:#fff;content:"";display:block;height:2px;margin-right:-16px;margin-left:-16px}._24VAejaPiq1J4_4L8yeTg3 ._2Z1IOt3liuCCTRWLJEXB8O{-webkit-box-flex:0;flex:0 0 auto;padding:16px;box-shadow:0 0 0 transparent,0 0 0 transparent;background-color:#fff;border-top-left-radius:0;border-top-right-radius:0;border-bottom-left-radius:4px;border-bottom-right-radius:4px}</style><style type="text/css">._1M6CBD2a_ICnvtPIBrGtfz{display:-webkit-inline-box;display:inline-flex}._3BeGYOQyZchOnZ8PVQquOY{-webkit-box-flex:1;flex:1 1 auto}._3BeGYOQyZchOnZ8PVQquOY ._2Jm9TuaFJ-2IyegTvr4RoK{display:block;box-sizing:border-box}._2Jm9TuaFJ-2IyegTvr4RoK{display:-webkit-box;display:flex;width:100%;-webkit-transition:box-shadow .15s cubic-bezier(.47,.03,.49,1.38);transition:box-shadow .15s cubic-bezier(.47,.03,.49,1.38);-webkit-transition-duration:.2s;transition-duration:.2s;cursor:pointer}._2Jm9TuaFJ-2IyegTvr4RoK:focus{outline:none;box-shadow:0 0 0 2px #4c9aff}</style><style type="text/css">._1SLKjrUVbEkIcWt_GtqIWd{background:#fff;border-radius:3px;box-shadow:0 4px 8px -2px rgba(9,30,66,.25),0 0 1px rgba(9,30,66,.31);box-sizing:border-box;overflow:auto;padding:8px 0}._1WOjWfE-btzXyVyhFRfuaS{display:-webkit-box;display:flex;width:100%}._3OQE5wLIANDtG47b5FaI9e{display:-webkit-inline-box;display:inline-flex}._2-JZNxEUJhEAgPAmJiUObL{display:block;-webkit-box-flex:1;flex:1 1 auto}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">.LPjvspqBwxuWin68x1kpv{-webkit-box-align:center;align-items:center;display:-webkit-box;display:flex;flex-wrap:nowrap;box-sizing:border-box;font-size:14px;font-weight:400;line-height:1;padding:0 16px;text-decoration:none;color:#172b4d;cursor:pointer}.LPjvspqBwxuWin68x1kpv:hover{background-color:#f4f5f7;text-decoration:none;color:#172b4d}.LPjvspqBwxuWin68x1kpv:hover ._1j7OFyONSUXFFjjTvbicQL{color:rgba(137,147,164,.48);fill:transparent}.LPjvspqBwxuWin68x1kpv:hover._2fCqys1d36TSKfkeTpjGcf ._1j7OFyONSUXFFjjTvbicQL{color:#0052cc;fill:#fff}.LPjvspqBwxuWin68x1kpv:hover.U-WTJk1J1gHaD6vFxKSep{background-color:#fff}.LPjvspqBwxuWin68x1kpv:active{background-color:#deebff;color:#172b4d}.LPjvspqBwxuWin68x1kpv:active ._1j7OFyONSUXFFjjTvbicQL{color:rgba(137,147,164,.48);fill:transparent}.LPjvspqBwxuWin68x1kpv:active._2fCqys1d36TSKfkeTpjGcf ._1j7OFyONSUXFFjjTvbicQL{color:#0052cc;fill:#fff}.LPjvspqBwxuWin68x1kpv._19DuzGqgCXhdWURZgvzUvt{display:none}.LPjvspqBwxuWin68x1kpv._2fCqys1d36TSKfkeTpjGcf ._1j7OFyONSUXFFjjTvbicQL{color:#0052cc;fill:#fff}.LPjvspqBwxuWin68x1kpv.NS2gbqgeBzRFzWHdxMTMn,.LPjvspqBwxuWin68x1kpv:focus{box-shadow:inset 0 0 0 2px #4c9aff;outline:none;outline-offset:0;position:relative}.LPjvspqBwxuWin68x1kpv._1b42W7Ey9I0WlaVflzihgB{background-color:#f4f5f7;color:#172b4d}.LPjvspqBwxuWin68x1kpv.U-WTJk1J1gHaD6vFxKSep{color:#a5adba;cursor:not-allowed}.LPjvspqBwxuWin68x1kpv.U-WTJk1J1gHaD6vFxKSep ._1j7OFyONSUXFFjjTvbicQL{color:#344563;fill:transparent}.LPjvspqBwxuWin68x1kpv.U-WTJk1J1gHaD6vFxKSep._2fCqys1d36TSKfkeTpjGcf ._1j7OFyONSUXFFjjTvbicQL{color:#344563;fill:#253858}.ungj1n8qIAHnk4RmL8vl-{display:-webkit-box;display:flex}._37Ts8pWygF_uiUWDEON7Pq{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center}._1j7OFyONSUXFFjjTvbicQL{margin:0 8px;display:-webkit-box;display:flex;color:#f4f5f7;fill:#f4f5f7}._1j7OFyONSUXFFjjTvbicQL+.HnRfn275a1ctE7BmzXCQ_{margin:0}._1thE8NLljmyLr4CRCLc0SU{-webkit-box-flex:1;flex:1 1 auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin:0 8px;padding:9px 0}._1thE8NLljmyLr4CRCLc0SU:first-child{margin:0}._3NneioW7Sz5drSyotPkuOV{color:#6c798f}</style><style type="text/css">._2usSAge21aohl1dTen3pYE{box-sizing:border-box;display:block;margin-top:8px}._2usSAge21aohl1dTen3pYE:first-child{margin-top:0}._2Tza2k06xFtO3maV1p0AgW{-webkit-box-align:baseline;align-items:baseline;color:#5e6c84;display:-webkit-box;display:flex;-webkit-box-flex:1;flex:1 1 auto;font-weight:400;font-size:14px;line-height:1;margin:0;padding:8px 16px}.opdJ7SG1wNxrMHtnb0m4B{-webkit-box-flex:0;flex:0 0 auto}._3-vpn6S9SEnZTg0PBL00yt{-webkit-box-flex:1;flex:1 1 auto;font-size:12px;text-transform:uppercase}</style><style type="text/css">._3edJcM1AhAfZfkXm4O6SlR{align-items:center;display:inline-flex;justify-content:center;line-height:1}._1nsUFtuF_xQWnNKWDPqbV0{height:20px;width:20px}._1nsUFtuF_xQWnNKWDPqbV0 ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._2BA0sHJeSgE_UaYRa5HJfQ{height:30px;width:30px}._2BA0sHJeSgE_UaYRa5HJfQ ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._30oeqoDrA_AkV6RRmnwcFs{height:50px;width:50px}._30oeqoDrA_AkV6RRmnwcFs ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1Jh9gLlanbiwcXfnulhGjI{height:100px;width:100px}._1Jh9gLlanbiwcXfnulhGjI ._1CglxoEYqlornIhrTO3dC6{height:100%;width:100%}._1CglxoEYqlornIhrTO3dC6{overflow:hidden;max-height:100%;max-width:100%;vertical-align:bottom}</style><style type="text/css">._2aLep88IoY3TWVaa8j3Rq-{display:inline-block}._2aLep88IoY3TWVaa8j3Rq-._1H83plicqplDNcuZlkHsuq{display:block}._24H80zVfTHc9KOdgPYA2ML{-webkit-box-align:center;align-items:center;display:-webkit-box;display:flex;width:100%}._2JZg5kJf8oB6TtLtP5LGf6{-webkit-box-flex:1;flex:1 1 auto;margin:6px 8px;white-space:nowrap}._2olVSTbRCbHzmyYkIW14gC{-webkit-box-align:center;align-items:center;display:-webkit-box;display:flex;-webkit-box-flex:0;flex:0 0 24px;-webkit-box-pack:center;justify-content:center;margin:0 8px}</style><style type="text/css"></style><style id="igtranslator-color" type="text/css"></style></head>
+<body data-aui-version="5.9.4" class="production aui-page-sidebar aui-sidebar-expanded" data-static-url="https://d301sr5gafysq2.cloudfront.net/dac230a7a1ec/" data-base-url="https://bitbucket.org" data-no-avatar-image="https://d301sr5gafysq2.cloudfront.net/dac230a7a1ec/img/default_avatar/user_blue.svg" data-current-user="{&quot;isKbdShortcutsEnabled&quot;: true, &quot;isSshEnabled&quot;: false, &quot;isAuthenticated&quot;: false}" data-atlassian-id="{&quot;loginStatusUrl&quot;: &quot;https://id.atlassian.com/profile/rest/profile&quot;}" data-settings="{&quot;MENTIONS_MIN_QUERY_LENGTH&quot;: 3}" data-current-repo="{&quot;scm&quot;: &quot;git&quot;, &quot;readOnly&quot;: false, &quot;mainbranch&quot;: {&quot;name&quot;: &quot;master&quot;}, &quot;language&quot;: &quot;c&quot;, &quot;owner&quot;: {&quot;username&quot;: &quot;enddl22&quot;, &quot;uuid&quot;: &quot;0959b9a1-e476-4ffe-ad4d-88b68f916d90&quot;, &quot;isTeam&quot;: false}, &quot;fullslug&quot;: &quot;enddl22/ardrone_side_project&quot;, &quot;slug&quot;: &quot;ardrone_side_project&quot;, &quot;id&quot;: 1535849, &quot;pygmentsLanguage&quot;: &quot;c&quot;}" data-current-cset="07b5a2184f8a82d4ecaff84f35cd8a224bd11fa3" data-browser-monitoring="true" data-switch-create-pullrequest-commit-status="true">
+<div id="page">
+  
+    
+    <div id="wrapper">
+      
+  
+
+
+      
+        <header id="header" role="banner" data-module="header/tracking">
+          
+  
+
+
+          <nav data-aui-responsive="true" class="aui-header aui-dropdown2-trigger-group" role="navigation">
+            <div class="aui-header-inner">
+              <div class="aui-header-primary">
+                
+  
+
+                
+                  <h1 class="aui-header-logo aui-header-logo-bitbucket logged-out" id="logo" data-ct="bitbucket.header.logo.click">
+                    <a title="( type g then d )" href="https://bitbucket.org/">
+                      <span class="aui-header-logo-device">Bitbucket</span>
+                    </a>
+                  </h1>
+                
+                
+  
+
+    
+    
+  
+
+    
+    
+  
+<ul style="width: auto;" resolved="" class="aui-nav">
+  
+    <li>
+      <a href="https://bitbucket.org/product/features">
+        Features
+      </a>
+    </li>
+    <li>
+      <a href="https://bitbucket.org/plans">
+        Pricing
+      </a>
+    </li>
+  
+</ul>
+
+              </div>
+              <div class="aui-header-secondary">
+                
+  
+
+<ul resolved="" role="menu" class="aui-nav">
+  
+  <li>
+    <form action="/repo/all" method="get" class="aui-quicksearch">
+      <label for="search-query" class="assistive">owner/repository</label>
+      <input title="( type / )" id="search-query" class="bb-repo-typeahead" placeholder="Find a repository…" name="name" autocomplete="off" data-bb-typeahead-focus="false" type="text">
+    </form>
+  </li>
+  <li>
+    <a aria-haspopup="true" aria-expanded="false" resolved="" id="help-menu-link" class="aui-nav-link" href="#" aria-controls="help-menu-dialog" data-aui-trigger="">
+      <span id="help-menu-icon" class="aui-icon aui-icon-small aui-iconfont-help"></span>
+    </a>
+  </li>
+  
+    <li>
+      <a aria-expanded="false" resolved="" class="aui-dropdown2-trigger" href="#" aria-controls="header-language" aria-owns="header-language" aria-haspopup="true" data-container="#header .aui-header-inner">
+        <span>English</span></a>
+      <nav tabindex="0" aria-checked="false" resolved="" id="header-language" class="aui-dropdown2 aui-style-default aui-dropdown2-radio aui-dropdown2-in-header aui-layer" aria-hidden="true">
+        <form method="post" action="/account/language/setlang/" data-module="i18n/header-language-form">
+          <input name="language" value="" type="hidden">
+          <ul>
+          <li><a tabindex="0" aria-checked="true" resolved="" class="aui-dropdown2-radio interactive checked aui-dropdown2-checked" data-value="en" href="#en">English</a></li>
+          
+          <li><a tabindex="0" aria-checked="false" resolved="" class="aui-dropdown2-radio interactive " data-value="ja" href="#ja">日本語</a></li>
+          </ul>
+        </form>
+      </nav>
+    </li>
+  
+  
+      <li id="header-signup-button">
+        <a resolved="" id="sign-up-link" data-ct="bitbucket.header.signup.click" class="aui-button aui-button-primary" href="https://bitbucket.org/account/signup/">
+          Sign up
+        </a>
+      </li>
+    <li id="user-options">
+      <a href="https://bitbucket.org/account/signin/?next=/enddl22/ardrone_side_project/src/07b5a2184f8a82d4ecaff84f35cd8a224bd11fa3/src/ours/ardrone_pose_estimation/src/%3Fat%3Dmaster" class="aui-nav-link login-link">Log in</a>
+    </li>
+  
+</ul>
+
+              </div>
+            </div>
+          </nav>
+        </header>
+      
+
+      
+  
+
+<div id="account-warning" data-module="header/account-warning" data-unconfirmed-addresses="false" data-no-addresses="false"></div>
+
+
+
+      
+  
+<header id="aui-message-bar">
+  
+</header>
+
+
+    <div id="content" role="main">
+      
+        
+  
+    <div class="aui-sidebar repo-sidebar" data-module="repo/sidebar">
+  <div style="height: 632px;" class="aui-sidebar-wrapper">
+    <div class="aui-sidebar-body">
+      <header class="aui-page-header">
+        <div class="aui-page-header-inner">
+          <div class="aui-page-header-image">
+            <a href="https://bitbucket.org/enddl22/ardrone_side_project" id="repo-avatar-link" class="repo-link">
+              <span class="aui-avatar aui-avatar-large aui-avatar-project">
+                <span class="aui-avatar-inner">
+                  <img src="enddl22%20_%20ardrone_side_project%20_%20source%20_%20src%20_%20ours%20_%20ardrone_pose_estimation%20_%20src%20%E2%80%94%20Bitbucket_files/c.svg" alt="">
+                </span>
+              </span>
+            </a>
+          </div>
+          <div class="aui-page-header-main">
+            <h1>
+              
+              <a href="https://bitbucket.org/enddl22/ardrone_side_project" title="ardrone_side_project" class="entity-name">ardrone_side_project</a>
+            </h1>
+          </div>
+        </div>
+      </header>
+      <nav class="aui-navgroup aui-navgroup-vertical">
+        <div class="aui-navgroup-inner">
+          
+            
+              <div aria-haspopup="true" aria-expanded="false" resolved="" data-aui-trigger="" aria-controls="sidebar-submenu0" class="aui-sidebar-group aui-sidebar-group-actions repository-actions forks-enabled">
+                <div class="aui-nav-heading">
+                  <strong>Actions</strong>
+                </div>
+                <ul resolved="" id="repo-actions" class="aui-nav">
+                  
+                  
+                    <li>
+                      <a id="repo-clone-button" class="aui-nav-item " href="#clone" data-ct="bitbucket.sidebar.actions.click" data-ct-data="{&quot;label&quot;: &quot;repository.clone&quot;}" data-module="components/clone/clone-dialog" target="_self">
+                        
+                          <span class="aui-icon aui-icon-large icon-clone"></span>
+                        
+                        <span class="aui-nav-item-label">Clone</span>
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a title="( type x then c )" id="repo-compare-link" class="aui-nav-item " href="https://bitbucket.org/enddl22/ardrone_side_project/branches/compare" data-ct="bitbucket.sidebar.actions.click" data-ct-data="{&quot;label&quot;: &quot;repository.compare&quot;}" target="_self">
+                        
+                          <span class="aui-icon aui-icon-large aui-icon-small aui-iconfont-devtools-compare"></span>
+                        
+                        <span class="aui-nav-item-label">Compare</span>
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a title="( type x then f )" id="repo-fork-link" class="aui-nav-item " href="https://bitbucket.org/enddl22/ardrone_side_project/fork" data-ct="bitbucket.sidebar.actions.click" data-ct-data="{&quot;label&quot;: &quot;repository.fork&quot;}" target="_self">
+                        
+                          <span class="aui-icon aui-icon-large icon-fork"></span>
+                        
+                        <span class="aui-nav-item-label">Fork</span>
+                      </a>
+                    </li>
+                  
+                </ul>
+              </div>
+          
+          <div class="aui-sidebar-group aui-sidebar-group-tier-one repository-sections">
+            <div class="aui-nav-heading">
+              <strong>Navigation</strong>
+            </div>
+            <ul resolved="" class="aui-nav">
+              
+              
+                <li>
+                  <a title="( type r then o )" id="repo-overview-link" class="aui-nav-item " href="https://bitbucket.org/enddl22/ardrone_side_project/overview" data-ct="bitbucket.sidebar.navigation.click" data-ct-data="{&quot;label&quot;: &quot;repository.overview&quot;}" target="_self">
+                    
+                    
+                      <span class="aui-icon aui-icon-large icon-overview"></span>
+                    
+                    <span class="aui-nav-item-label">
+                      Overview
+                      
+                      
+                    </span>
+                  </a>
+                </li>
+              
+                <li class="aui-nav-selected">
+                  <a title="( type r then s )" id="repo-source-link" class="aui-nav-item " href="https://bitbucket.org/enddl22/ardrone_side_project/src" data-ct="bitbucket.sidebar.navigation.click" data-ct-data="{&quot;label&quot;: &quot;repository.source&quot;}" target="_self">
+                    
+                    
+                      <span class="aui-icon aui-icon-large icon-source"></span>
+                    
+                    <span class="aui-nav-item-label">
+                      Source
+                      
+                      
+                    </span>
+                  </a>
+                </li>
+              
+                <li>
+                  <a title="( type r then c )" id="repo-commits-link" class="aui-nav-item " href="https://bitbucket.org/enddl22/ardrone_side_project/commits/" data-ct="bitbucket.sidebar.navigation.click" data-ct-data="{&quot;label&quot;: &quot;repository.commits&quot;}" target="_self">
+                    
+                    
+                      <span class="aui-icon aui-icon-large icon-commits"></span>
+                    
+                    <span class="aui-nav-item-label">
+                      Commits
+                      
+                      
+                    </span>
+                  </a>
+                </li>
+              
+                <li>
+                  <a title="( type r then b )" id="repo-branches-link" class="aui-nav-item " href="https://bitbucket.org/enddl22/ardrone_side_project/branches/" data-ct="bitbucket.sidebar.navigation.click" data-ct-data="{&quot;label&quot;: &quot;repository.branches&quot;}" target="_self">
+                    
+                    
+                      <span class="aui-icon aui-icon-large icon-branches"></span>
+                    
+                    <span class="aui-nav-item-label">
+                      Branches
+                      
+                      
+                    </span>
+                  </a>
+                </li>
+              
+                <li>
+                  <a title="( type r then p )" id="repo-pullrequests-link" class="aui-nav-item " href="https://bitbucket.org/enddl22/ardrone_side_project/pull-requests/" data-ct="bitbucket.sidebar.navigation.click" data-ct-data="{&quot;label&quot;: &quot;repository.pullrequests&quot;}" target="_self">
+                    
+                    
+                      <span class="aui-icon aui-icon-large icon-pull-requests"></span>
+                    
+                    <span class="aui-nav-item-label">
+                      Pull requests
+                      
+                      
+                    </span>
+                  </a>
+                </li>
+              
+                <li>
+                  <a title="( type r then d )" id="repo-downloads-link" class="aui-nav-item " href="https://bitbucket.org/enddl22/ardrone_side_project/downloads/" data-ct="bitbucket.sidebar.navigation.click" data-ct-data="{&quot;label&quot;: &quot;repository.downloads&quot;}" target="_self">
+                    
+                    
+                      <span class="aui-icon aui-icon-large icon-downloads"></span>
+                    
+                    <span class="aui-nav-item-label">
+                      Downloads
+                      
+                      
+                    </span>
+                  </a>
+                </li>
+              
+            </ul>
+          </div>
+          <div class="aui-sidebar-group aui-sidebar-group-tier-one repository-settings">
+            <div class="aui-nav-heading">
+              <strong class="assistive">Settings</strong>
+            </div>
+            <ul resolved="" class="aui-nav">
+              
+              
+            </ul>
+          </div>
+          
+            
+          
+        </div>
+      </nav>
+    </div>
+    <div class="aui-sidebar-footer">
+      <a resolved="" class="aui-sidebar-toggle aui-sidebar-footer-tipsy aui-button aui-button-subtle"><span class="aui-icon"></span></a>
+    </div>
+  </div>
+  
+
+<div id="repo-clone-dialog" class="clone-dialog hidden">
+  
+
+
+
+
+
+  
+
+<div data-resolved-mirrors="0" class="clone-url" data-module="components/clone/url-dropdown" data-owner="0959b9a1-e476-4ffe-ad4d-88b68f916d90" data-location-context="header" data-fetch-url="https://bitbucket.org/enddl22/ardrone_side_project.git" data-push-url="https://bitbucket.org/enddl22/ardrone_side_project.git">
+  <div class="aui-buttons">
+    
+    <button href="#" aria-expanded="false" aria-haspopup="true" resolved="" class="aui-button aui-dropdown2-trigger protocol-trigger" data-command-prefix="git clone" data-primary-https="https://bitbucket.org/enddl22/ardrone_side_project.git" data-primary-ssh="git@bitbucket.org:enddl22/ardrone_side_project.git" aria-controls="protocols-list-header">
+      <span class="dropdown-text">HTTPS</span>
+    </button>
+    <aui-dropdown-menu aria-hidden="true" class="aui-dropdown2 aui-style-default aui-layer" role="menu" resolved="" id="protocols-list-header" data-aui-alignment="bottom left">
+        <div role="application">
+            <!-- content {"defaultContent":"","selector":null} -->
+      <aui-section role="presentation" resolved="" id="protocols-list-section" class="aui-list-truncate aui-dropdown2-section">
+        <strong aria-role="presentation" class="aui-dropdown2-heading"></strong>
+        <div role="group">
+            <!-- content {"defaultContent":"","selector":null} -->
+        <aui-item-radio resolved="" class="item-link https" checked=""><span resolved="" aria-checked="true" role="radio" class="aui-dropdown2-radio checked aui-dropdown2-checked" tabindex="0"><!-- content {"defaultContent":"","selector":null} -->HTTPS<!-- /content --></span></aui-item-radio>
+        
+          <aui-item-radio resolved="" class="item-link ssh"><span aria-checked="false" resolved="" role="radio" class="aui-dropdown2-radio" tabindex="0"><!-- content {"defaultContent":"","selector":null} -->SSH<!-- /content --></span></aui-item-radio>
+        
+      <!-- /content -->
+        </div>
+    </aui-section>
+    <!-- /content -->
+        </div>
+    </aui-dropdown-menu>
+    <input readonly="readonly" class="clone-url-input" value="git clone https://bitbucket.org/enddl22/ardrone_side_project.git" type="text">
+  </div>
+  
+</div>
+
+  <div class="learn-more">
+    <p>Need help cloning? Learn how to
+         <a href="https://confluence.atlassian.com/x/4whODQ" target="_blank">clone a repository</a>.
+    </p>
+  </div>
+  
+  <div class="sourcetree-callout clone-in-sourcetree" data-module="components/clone/clone-in-sourcetree" data-https-url="https://bitbucket.org/enddl22/ardrone_side_project.git" data-ssh-url="ssh://git@bitbucket.org/enddl22/ardrone_side_project.git">
+
+  <div>
+    <button resolved="" class="aui-button aui-button-primary">
+      
+        Clone in SourceTree
+      
+    </button>
+  </div>
+
+  <p class="windows-text">
+    
+      <a href="http://www.sourcetreeapp.com/?utm_source=internal&amp;utm_medium=link&amp;utm_campaign=clone_repo_win" target="_blank">Atlassian SourceTree</a>
+      is a free Git and Mercurial client for Windows.
+    
+  </p>
+  <p class="mac-text">
+    
+      <a href="http://www.sourcetreeapp.com/?utm_source=internal&amp;utm_medium=link&amp;utm_campaign=clone_repo_mac" target="_blank">Atlassian SourceTree</a>
+      is a free Git and Mercurial client for Mac.
+    
+  </p>
+</div>
+</div>
+</div>
+  
+
+        
+  <div class="aui-page-panel ">
+    <div class="hidden">
+  
+  </div>
+    <div class="aui-page-panel-inner">
+      <div id="repo-content" class="aui-page-panel-content" data-module="repo/index">
+        
+          
+            <ol resolved="" class="aui-nav aui-nav-breadcrumbs">
+              <li>
+  <a href="https://bitbucket.org/enddl22/">Inkyu Sa</a>
+</li>
+
+<li>
+  <a href="https://bitbucket.org/enddl22/ardrone_side_project">ardrone_side_project</a>
+</li>
+              
+            </ol>
+          
+          <div class="aui-group repo-page-header">
+            <div class="aui-item section-title">
+              <h1>Source</h1>
+            </div>
+            <div class="aui-item page-actions">
+              
+            </div>
+          </div>
+        
+        
+  <div id="source-container" class="maskable" data-module="repo/source/index">
+    
+
+
+
+<header id="source-path">
+  
+    <div class="labels labels-csv">
+      <div class="aui-buttons">
+        <button resolved="" data-branches-tags-url="/api/1.0/repositories/enddl22/ardrone_side_project/branches-tags" data-module="components/branch-dialog" class="aui-button branch-dialog-trigger" title="master">
+          
+            
+              <span class="aui-icon aui-icon-small aui-iconfont-devtools-branch">Branch</span>
+            
+            <span class="name">master</span>
+          
+          <span class="aui-icon-dropdown"></span>
+        </button>
+        <button resolved="" class="aui-button" id="checkout-branch-button" title="Check out this branch">
+          <span class="aui-icon aui-icon-small aui-iconfont-devtools-clone">Check out branch</span>
+          <span class="aui-icon-dropdown"></span>
+        </button>
+      </div>
+      
+    
+    
+  
+    </div>
+  
+  
+    <div class="secondary-actions">
+      <div class="aui-buttons">
+        
+          
+        
+      </div>
+    </div>
+  
+  <h1>
+    
+  
+      
+        <a href="https://bitbucket.org/enddl22/ardrone_side_project/src/07b5a2184f8a?at=master" class="pjax-trigger root" title="enddl22/ardrone_side_project at 07b5a2184f8a">ardrone_side_project</a> /
+      
+      
+        
+          
+            <a href="https://bitbucket.org/enddl22/ardrone_side_project/src/07b5a2184f8a/src/?at=master" class="pjax-trigger directory-name">src</a> /
+          
+        
+      
+        
+          
+            <a href="https://bitbucket.org/enddl22/ardrone_side_project/src/07b5a2184f8a/src/ours/?at=master" class="pjax-trigger directory-name">ours</a> /
+          
+        
+      
+        
+          
+            <a href="https://bitbucket.org/enddl22/ardrone_side_project/src/07b5a2184f8a/src/ours/ardrone_pose_estimation/?at=master" class="pjax-trigger directory-name">ardrone_pose_estimation</a> /
+          
+        
+      
+        
+          
+            <span class="directory-name">src</span> /
+          
+        
+      
+    
+
+  </h1>
+  
+    
+    
+  
+  <div class="clearfix"></div>
+</header>
+
+
+  <table id="source-list" class="aui aui-table-interactive bb-list" data-module="repo/source/list" data-lastmod-url="/xhr/source-lastmod/enddl22/ardrone_side_project/07b5a2184f8a82d4ecaff84f35cd8a224bd11fa3/src/ours/ardrone_pose_estimation/src">
+    <thead>
+      <tr>
+        <th class="name">Filename</th>
+        <th class="size">Size</th>
+        <th class="date">Date modified</th>
+        <th class="text">Message</th>
+      
+      </tr>
+    </thead>
+    <tbody>
+      
+        
+          <tr class="iterable-item">
+            <td colspan="4" class="name dirname">
+              
+                <a href="https://bitbucket.org/enddl22/ardrone_side_project/src/07b5a2184f8a/src/ours/ardrone_pose_estimation/?at=master" class="pjax-trigger execute" title="Go to parent directory"><span class="aui-icon aui-icon-small aui-iconfont-devtools-browse-up"></span>..</a>
+              
+            </td>
+          </tr>
+        
+        
+          <tr class="iterable-item">
+            
+            <td class="name dirname" colspan="4">
+              <a href="https://bitbucket.org/enddl22/ardrone_side_project/src/07b5a2184f8a82d4ecaff84f35cd8a224bd11fa3/src/ours/ardrone_pose_estimation/src/ardrone_pose_estimation/?at=master" title="" class="pjax-trigger execute"><span class="aui-icon aui-icon-small aui-iconfont-devtools-folder-closed"></span>ardrone_pose_estimation</a>
+            </td>
+            
+            
+          </tr>
+        
+        
+          <tr class="iterable-item">
+            <td class="name filename">
+              <div>
+                <a href="https://bitbucket.org/enddl22/ardrone_side_project/src/07b5a2184f8a82d4ecaff84f35cd8a224bd11fa3/src/ours/ardrone_pose_estimation/src/Kalman.cpp?at=master" title="Kalman.cpp" class="pjax-trigger execute"><span class="aui-icon aui-icon-small aui-iconfont-devtools-file"></span>Kalman.cpp</a>
+              </div>
+            </td>
+            
+            
+            <td class="size">
+              <div>
+                
+                  4.9 KB
+                
+              </div>
+            </td>
+            
+              <td class="date" id="sourcelist-date-5de073747eb6a7ff03eccb9a0f2ec8928923b5cc"><div data-for="#sourcelist-date-5de073747eb6a7ff03eccb9a0f2ec8928923b5cc"><time title="26 November 2012 18:18" datetime="2012-11-26T18:18:15+05:00" data-title="true">2012-11-26</time></div></td>
+              <td class="text" id="sourcelist-text-5de073747eb6a7ff03eccb9a0f2ec8928923b5cc"><div data-for="#sourcelist-text-5de073747eb6a7ff03eccb9a0f2ec8928923b5cc">
+    
+      We have several updates.
+    
+  </div></td>
+            
+            
+          </tr>
+        
+          <tr class="iterable-item">
+            <td class="name filename">
+              <div>
+                <a href="https://bitbucket.org/enddl22/ardrone_side_project/src/07b5a2184f8a82d4ecaff84f35cd8a224bd11fa3/src/ours/ardrone_pose_estimation/src/ardrone_pose_estimation.cpp?at=master" title="ardrone_pose_estimation.cpp" class="pjax-trigger execute"><span class="aui-icon aui-icon-small aui-iconfont-devtools-file"></span>ardrone_pose_estimation.cpp</a>
+              </div>
+            </td>
+            
+            
+            <td class="size">
+              <div>
+                
+                  21.7 KB
+                
+              </div>
+            </td>
+            
+              <td class="date" id="sourcelist-date-6b509b853c550037c988076aa03e40d59ada9ca8"><div data-for="#sourcelist-date-6b509b853c550037c988076aa03e40d59ada9ca8"><time title="28 December 2012 08:43" datetime="2012-12-28T08:43:20+05:00" data-title="true">2012-12-28</time></div></td>
+              <td class="text" id="sourcelist-text-6b509b853c550037c988076aa03e40d59ada9ca8"><div data-for="#sourcelist-text-6b509b853c550037c988076aa03e40d59ada9ca8">
+    
+      1. Update ROS nodes that we used for AIM2013 data logging.
+    
+  </div></td>
+            
+            
+          </tr>
+        
+          <tr class="iterable-item">
+            <td class="name filename">
+              <div>
+                <a href="https://bitbucket.org/enddl22/ardrone_side_project/src/07b5a2184f8a82d4ecaff84f35cd8a224bd11fa3/src/ours/ardrone_pose_estimation/src/main.cpp?at=master" title="main.cpp" class="pjax-trigger execute"><span class="aui-icon aui-icon-small aui-iconfont-devtools-file"></span>main.cpp</a>
+              </div>
+            </td>
+            
+            
+            <td class="size">
+              <div>
+                
+                  1.1 KB
+                
+              </div>
+            </td>
+            
+              <td class="date" id="sourcelist-date-750afc4262670edee5914233121e448305510cff"><div data-for="#sourcelist-date-750afc4262670edee5914233121e448305510cff"><time title="20 October 2012 20:59" datetime="2012-10-20T20:59:29+05:00" data-title="true">2012-10-20</time></div></td>
+              <td class="text" id="sourcelist-text-750afc4262670edee5914233121e448305510cff"><div data-for="#sourcelist-text-750afc4262670edee5914233121e448305510cff">
+    
+      New repo for the AR.Drone side project
+    
+  </div></td>
+            
+            
+          </tr>
+        
+       
+    </tbody>
+  </table>
+  
+  <div data-module="source/set-changeset" data-hash="07b5a2184f8a82d4ecaff84f35cd8a224bd11fa3"></div>
+
+
+
+  
+    
+    
+    
+  
+  
+
+  </div>
+
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+      </div>
+    </div>
+  
+
+  
+    
+      <footer id="footer" role="contentinfo" data-module="components/footer">
+        <section class="footer-body">
+          
+  <ul>
+  <li>
+    <a original-title="" class="support-ga" target="_blank" data-support-gaq-page="Blog" href="http://blog.bitbucket.org/">Blog</a>
+  </li>
+  <li>
+    <a original-title="" class="support-ga" target="_blank" data-support-gaq-page="Home" href="https://bitbucket.org/support">Support</a>
+  </li>
+  <li>
+    <a original-title="" class="support-ga" data-support-gaq-page="PlansPricing" href="https://bitbucket.org/plans">Plans &amp; pricing</a>
+  </li>
+  <li>
+    <a original-title="" class="support-ga" target="_blank" data-support-gaq-page="DocumentationHome" href="https://confluence.atlassian.com/display/BITBUCKET">Documentation</a>
+  </li>
+  <li>
+    <a original-title="" class="support-ga" target="_blank" data-support-gaq-page="DocumentationAPI" href="https://developer.atlassian.com/bitbucket/api/2/reference/">API</a>
+  </li>
+  <li>
+    <a original-title="" class="support-ga" target="_blank" data-support-gaq-page="SiteStatus" href="https://status.bitbucket.org/">Site status</a>
+  </li>
+  <li>
+    <a original-title="" class="support-ga" id="meta-info" data-support-gaq-page="MetaInfo" href="#">Version info</a>
+  </li>
+  <li>
+    <a original-title="" class="support-ga" target="_blank" data-support-gaq-page="EndUserAgreement" href="https://www.atlassian.com/legal/customer-agreement?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=footer">Terms of service</a>
+  </li>
+  <li>
+    <a original-title="" class="support-ga" target="_blank" data-support-gaq-page="PrivacyPolicy" href="https://www.atlassian.com/legal/privacy-policy">Privacy policy</a>
+  </li>
+</ul>
+<div id="meta-info-content" style="display: none;">
+  <ul>
+    
+      <li>English</li>
+    
+    <li>
+      <a original-title="" class="support-ga" target="_blank" data-support-gaq-page="GitDocumentation" href="http://git-scm.com/">Git 2.7.4.1.g5468f9e</a>
+    </li>
+    <li>
+      <a original-title="" class="support-ga" target="_blank" data-support-gaq-page="HgDocumentation" href="https://www.mercurial-scm.org/">Mercurial 4.1</a>
+    </li>
+    <li>
+      <a original-title="" class="support-ga" target="_blank" data-support-gaq-page="DjangoDocumentation" href="https://www.djangoproject.com/">Django 1.9.12</a>
+    </li>
+    <li>
+      <a original-title="" class="support-ga" target="_blank" data-support-gaq-page="PythonDocumentation" href="http://www.python.org/">Python 2.7.3</a>
+    </li>
+    <li>
+      <a original-title="" class="support-ga" target="_blank" data-support-gaq-page="DeployedVersion" data-media-hex="dac230a7a1ec" href="#">dac230a7a1ec / dac230a7a1ec @ app-164</a>
+    </li>
+    <li>
+      <a original-title="" class="support-ga" target="_blank" data-support-gaq-page="StorageRegion" href="#">Region production</a>
+    </li>
+  </ul>
+</div>
+<ul class="atlassian-links">
+  <li>
+    <a original-title="Track everything – bugs, tasks, deadlines, code – and pull reports to stay informed." id="atlassian-jira-link" target="_blank" href="https://www.atlassian.com/software/jira/bitbucket-integration?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=bitbucket_footer">JIRA Software</a>
+  </li>
+  <li>
+    <a original-title="Content Creation, Collaboration &amp; Knowledge Sharing for Teams." id="atlassian-confluence-link" target="_blank" href="http://www.atlassian.com/software/confluence/overview/team-collaboration-software?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=bitbucket_footer">Confluence</a>
+  </li>
+  <li>
+    <a original-title="Continuous integration and deployment, release management." id="atlassian-bamboo-link" target="_blank" href="http://www.atlassian.com/software/bamboo?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=bitbucket_footer">Bamboo</a>
+  </li>
+  <li>
+    <a original-title="A free Git and Mercurial desktop client for Mac or Windows." id="atlassian-sourcetree-link" target="_blank" href="http://www.sourcetreeapp.com/?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=bitbucket_footer">SourceTree</a>
+  </li>
+  <li>
+    <a original-title="Group chat and IM built for teams." id="atlassian-hipchat-link" target="_blank" href="http://www.hipchat.com/?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=bitbucket_footer">HipChat</a>
+  </li>
+</ul>
+<div id="footer-logo">
+  <a original-title="Bitbucket is developed by Atlassian in Austin, San Francisco, and Sydney." target="_blank" href="http://www.atlassian.com/?utm_source=bitbucket&amp;utm_medium=logo&amp;utm_campaign=bitbucket_footer">Atlassian</a>
+</div>
+
+        </section>
+      </footer>
+    
+  
+</div>
+
+
+
+  
+
+<div data-module="components/mentions/index">
+  
+    
+    
+  
+  
+    
+    
+  
+  
+    
+    
+  
+</div>
+<div data-module="components/typeahead/emoji/index">
+  
+    
+    
+  
+</div>
+
+<div data-module="components/repo-typeahead/index">
+  
+    
+    
+  
+</div>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+
+  
+
+
+    
+    
+  
+
+    
+    
+  
+
+
+
+  
+  
+  <aui-inline-dialog resolved="" class="aui-layer" id="help-menu-dialog" data-aui-alignment="bottom right" data-aui-alignment-static="true" data-module="header/help-menu" responds-to="toggle" aria-hidden="true"><div class="aui-inline-dialog-contents">
+
+  <div id="help-menu-section">
+    <h1 class="help-menu-heading">Help</h1>
+
+    <form id="help-menu-search-form" class="aui" target="_blank" method="get" action="https://support.atlassian.com/customer/search">
+      <span id="help-menu-search-icon" class="aui-icon aui-icon-large aui-iconfont-search"></span>
+      <input id="help-menu-search-form-input" name="q" class="text" placeholder="Ask a question" type="text">
+    </form>
+
+    <ul id="help-menu-links">
+      <li>
+        <a class="support-ga" data-support-gaq-page="DocumentationHome" href="https://confluence.atlassian.com/x/bgozDQ" target="_blank">
+          Online help
+        </a>
+      </li>
+      <li>
+        <a class="support-ga" data-support-gaq-page="GitTutorials" href="https://www.atlassian.com/git?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=help_dropdown&amp;utm_content=learn_git" target="_blank">
+          Learn Git
+        </a>
+      </li>
+      <li>
+        <a id="keyboard-shortcuts-link" href="#">Keyboard shortcuts</a>
+      </li>
+      <li>
+        <a class="support-ga" data-support-gaq-page="DocumentationTutorials" href="https://confluence.atlassian.com/x/Q4sFLQ" target="_blank">
+          Bitbucket tutorials
+        </a>
+      </li>
+      <li>
+        <a class="support-ga" data-support-gaq-page="SiteStatus" href="https://status.bitbucket.org/" target="_blank">
+          Site status
+        </a>
+      </li>
+      <li>
+        <a class="support-ga" data-support-gaq-page="Home" href="https://bitbucket.org/support">
+          Support
+        </a>
+      </li>
+    </ul>
+  </div>
+</div></aui-inline-dialog>
+  
+
+
+
+
+
+
+  
+
+  <div class="_mustache-templates">
+    
+      <script id="repo-dropdown-template" type="text/html">
+        
+
+
+[[#hasViewed]]
+  <div class="aui-dropdown2-section">
+    <strong class="viewed">Recently viewed</strong>
+    <ul>
+      [[#viewed]]
+        <li class="[[#is_private]]private[[/is_private]][[^is_private]]public[[/is_private]] repository">
+          <a href="[[url]]" title="[[owner]][[#project]] / [[project]][[/project]] / [[name]]" class="aui-icon-container recently-viewed repo-link"
+              data-ct="bitbucket.header.repository.dropdown.repository.click" data-ct-data='{"type": "recently-viewed"}'>
+            <span class="aui-avatar aui-avatar-xsmall aui-avatar-project">
+              <span class="aui-avatar-inner">
+                <img src="[[{avatar}]]">
+              </span>
+            </span>
+            <span class="dropdown-path">
+              <span class="dropdown-path-part">[[#project]][[project]][[/project]][[^project]][[owner]][[/project]]</span>
+              <span class="dropdown-path-separator">/</span>
+              <span class="dropdown-path-part dropdown-path-part--primary">[[name]]</span>
+            </span>
+          </a>
+        </li>
+      [[/viewed]]
+    </ul>
+  </div>
+[[/hasViewed]]
+[[#hasUpdated]]
+  <div class="aui-dropdown2-section">
+    <strong class="updated">Recently updated</strong>
+    <ul>
+      [[#updated]]
+      <li class="[[#is_private]]private[[/is_private]][[^is_private]]public[[/is_private]] repository">
+        <a href="[[url]]" title="[[owner]][[#project]] / [[project]][[/project]] / [[name]]" class="aui-icon-container recently-updated repo-link"
+           data-ct="bitbucket.header.repository.dropdown.repository.click" data-ct-data='{"type": "recently-updated"}'>
+          <span class="aui-avatar aui-avatar-xsmall aui-avatar-project">
+            <span class="aui-avatar-inner">
+              <img src="[[{avatar}]]">
+            </span>
+          </span>
+          <span class="dropdown-path">
+            <span class="dropdown-path-part">[[#project]][[project]][[/project]][[^project]][[owner]][[/project]]</span>
+            <span class="dropdown-path-separator">/</span>
+            <span class="dropdown-path-part dropdown-path-part--primary">[[name]]</span>
+          </span>
+        </a>
+      </li>
+      [[/updated]]
+    </ul>
+  </div>
+[[/hasUpdated]]
+
+      </script>
+    
+      <script id="snippet-dropdown-template" type="text/html">
+        <div class="aui-dropdown2-section">
+  <strong>[[sectionTitle]]</strong>
+  <ul class="aui-list-truncate">
+    [[#snippets]]
+      <li>
+        <a href="[[links.html.href]]">[[owner.display_name]] / [[name]]</a>
+      </li>
+    [[/snippets]]
+  </ul>
+</div>
+
+      </script>
+    
+      <script id="branch-checkout-template" type="text/html">
+        
+
+<div id="checkout-branch-contents">
+  <div class="command-line">
+    <p>
+      Check out this branch on your local machine to begin working on it.
+    </p>
+    <input type="text" class="checkout-command" readonly="readonly"
+        
+           value="git fetch && git checkout [[branchName]]"
+        
+        >
+  </div>
+  
+    <div class="sourcetree-callout clone-in-sourcetree"
+  data-module="components/clone/clone-in-sourcetree"
+  data-https-url="https://bitbucket.org/enddl22/ardrone_side_project.git"
+  data-ssh-url="ssh://git@bitbucket.org/enddl22/ardrone_side_project.git">
+
+  <div>
+    <button class="aui-button aui-button-primary">
+      
+        Check out in SourceTree
+      
+    </button>
+  </div>
+
+  <p class="windows-text">
+    
+      <a href="http://www.sourcetreeapp.com/?utm_source=internal&amp;utm_medium=link&amp;utm_campaign=clone_repo_win" target="_blank">Atlassian SourceTree</a>
+      is a free Git and Mercurial client for Windows.
+    
+  </p>
+  <p class="mac-text">
+    
+      <a href="http://www.sourcetreeapp.com/?utm_source=internal&amp;utm_medium=link&amp;utm_campaign=clone_repo_mac" target="_blank">Atlassian SourceTree</a>
+      is a free Git and Mercurial client for Mac.
+    
+  </p>
+</div>
+  
+</div>
+
+      </script>
+    
+      <script id="branch-dialog-template" type="text/html">
+        
+
+<div class="tabbed-filter-widget branch-dialog">
+  <div class="tabbed-filter">
+    <input placeholder="Filter branches" class="filter-box" autosave="branch-dropdown-1535849" type="text">
+    [[^ignoreTags]]
+      <div class="aui-tabs horizontal-tabs aui-tabs-disabled filter-tabs">
+        <ul class="tabs-menu">
+          <li class="menu-item active-tab"><a href="#branches">Branches</a></li>
+          <li class="menu-item"><a href="#tags">Tags</a></li>
+        </ul>
+      </div>
+    [[/ignoreTags]]
+  </div>
+  
+    <div class="tab-pane active-pane" id="branches" data-filter-placeholder="Filter branches">
+      <ol class="filter-list">
+        <li class="empty-msg">No matching branches</li>
+        [[#branches]]
+          
+            [[#hasMultipleHeads]]
+              [[#heads]]
+                <li class="comprev filter-item">
+                  <a class="pjax-trigger filter-item-link" href="/enddl22/ardrone_side_project/src/[[changeset]]/src/ours/ardrone_pose_estimation/src?at=[[safeName]]"
+                     title="[[name]]">
+                    [[name]] ([[shortChangeset]])
+                  </a>
+                </li>
+              [[/heads]]
+            [[/hasMultipleHeads]]
+            [[^hasMultipleHeads]]
+              <li class="comprev filter-item">
+                <a class="pjax-trigger filter-item-link" href="/enddl22/ardrone_side_project/src/[[changeset]]/src/ours/ardrone_pose_estimation/src?at=[[safeName]]" title="[[name]]">
+                  [[name]]
+                </a>
+              </li>
+            [[/hasMultipleHeads]]
+          
+        [[/branches]]
+      </ol>
+    </div>
+    <div class="tab-pane" id="tags" data-filter-placeholder="Filter tags">
+      <ol class="filter-list">
+        <li class="empty-msg">No matching tags</li>
+        [[#tags]]
+          <li class="comprev filter-item">
+            <a class="pjax-trigger filter-item-link" href="/enddl22/ardrone_side_project/src/[[changeset]]/src/ours/ardrone_pose_estimation/src?at=[[safeName]]" title="[[name]]">
+              [[name]]
+            </a>
+          </li>
+        [[/tags]]
+      </ol>
+    </div>
+  
+</div>
+
+      </script>
+    
+      <script id="mention-result" type="text/html">
+        
+<span class="mention-result">
+  <span class="aui-avatar aui-avatar-small mention-result--avatar">
+    <span class="aui-avatar-inner">
+      <img src="[[avatar_url]]">
+    </span>
+  </span>
+  [[#display_name]]
+    <span class="display-name mention-result--display-name">[[&display_name]]</span> <small class="username mention-result--username">[[&username]]</small>
+  [[/display_name]]
+  [[^display_name]]
+    <span class="username mention-result--username">[[&username]]</span>
+  [[/display_name]]
+  [[#is_teammate]][[^is_team]]
+    <span class="aui-lozenge aui-lozenge-complete aui-lozenge-subtle mention-result--lozenge">teammate</span>
+  [[/is_team]][[/is_teammate]]
+</span>
+      </script>
+    
+      <script id="mention-call-to-action" type="text/html">
+        
+[[^query]]
+<li class="bb-typeahead-item">Begin typing to search for a user</li>
+[[/query]]
+[[#query]]
+<li class="bb-typeahead-item">Continue typing to search for a user</li>
+[[/query]]
+
+      </script>
+    
+      <script id="mention-no-results" type="text/html">
+        
+[[^searching]]
+<li class="bb-typeahead-item">Found no matching users for <em>[[query]]</em>.</li>
+[[/searching]]
+[[#searching]]
+<li class="bb-typeahead-item bb-typeahead-searching">Searching for <em>[[query]]</em>.</li>
+[[/searching]]
+
+      </script>
+    
+      <script id="emoji-result" type="text/html">
+        
+<div class="aui-avatar aui-avatar-small">
+  <div class="aui-avatar-inner">
+    <img src="[[src]]">
+  </div>
+</div>
+<span class="name">[[&name]]</span>
+
+      </script>
+    
+      <script id="repo-typeahead-result" type="text/html">
+        <span class="aui-avatar aui-avatar-project aui-avatar-xsmall">
+  <span class="aui-avatar-inner">
+    <img src="[[avatar]]">
+  </span>
+</span>
+<span class="owner">[[&owner]]</span>/<span class="slug">[[&slug]]</span>
+
+      </script>
+    
+      <script id="share-form-template" type="text/html">
+        
+
+<div class="error aui-message hidden">
+  <span class="aui-icon icon-error"></span>
+  <div class="message"></div>
+</div>
+<form class="aui">
+  <table class="widget bb-list aui">
+    <thead>
+    <tr class="assistive">
+      <th class="user">User</th>
+      <th class="role">Role</th>
+      <th class="actions">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr class="form">
+        <td colspan="2">
+          <input type="text" class="text bb-user-typeahead user-or-email"
+                 placeholder="Username or email address"
+                 autocomplete="off"
+                 data-bb-typeahead-focus="false"
+                 [[#disabled]]disabled[[/disabled]]>
+        </td>
+        <td class="actions">
+          <button type="submit" class="aui-button aui-button-light" disabled>Add</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+
+      </script>
+    
+      <script id="share-detail-template" type="text/html">
+        
+
+[[#username]]
+<td class="user
+    [[#hasCustomGroups]]custom-groups[[/hasCustomGroups]]"
+    [[#error]]data-error="[[error]]"[[/error]]>
+  <div title="[[displayName]]">
+    <a href="/[[username]]/" class="user">
+      <span class="aui-avatar aui-avatar-xsmall">
+        <span class="aui-avatar-inner">
+          <img src="[[avatar]]">
+        </span>
+      </span>
+      <span>[[displayName]]</span>
+    </a>
+  </div>
+</td>
+[[/username]]
+[[^username]]
+<td class="email
+    [[#hasCustomGroups]]custom-groups[[/hasCustomGroups]]"
+    [[#error]]data-error="[[error]]"[[/error]]>
+  <div title="[[email]]">
+    <span class="aui-icon aui-icon-small aui-iconfont-email"></span>
+    [[email]]
+  </div>
+</td>
+[[/username]]
+<td class="role
+    [[#hasCustomGroups]]custom-groups[[/hasCustomGroups]]">
+  <div>
+    [[#group]]
+      [[#hasCustomGroups]]
+        <select class="group [[#noGroupChoices]]hidden[[/noGroupChoices]]">
+          [[#groups]]
+            <option value="[[slug]]"
+                [[#isSelected]]selected[[/isSelected]]>
+              [[name]]
+            </option>
+          [[/groups]]
+        </select>
+      [[/hasCustomGroups]]
+      [[^hasCustomGroups]]
+      <label>
+        <input type="checkbox" class="admin"
+            [[#isAdmin]]checked[[/isAdmin]]>
+        Administrator
+      </label>
+      [[/hasCustomGroups]]
+    [[/group]]
+    [[^group]]
+      <ul>
+        <li class="permission aui-lozenge aui-lozenge-complete
+            [[^read]]aui-lozenge-subtle[[/read]]"
+            data-permission="read">
+          read
+        </li>
+        <li class="permission aui-lozenge aui-lozenge-complete
+            [[^write]]aui-lozenge-subtle[[/write]]"
+            data-permission="write">
+          write
+        </li>
+        <li class="permission aui-lozenge aui-lozenge-complete
+            [[^admin]]aui-lozenge-subtle[[/admin]]"
+            data-permission="admin">
+          admin
+        </li>
+      </ul>
+    [[/group]]
+  </div>
+</td>
+<td class="actions
+    [[#hasCustomGroups]]custom-groups[[/hasCustomGroups]]">
+  <div>
+    <a href="#" class="delete">
+      <span class="aui-icon aui-icon-small aui-iconfont-remove">Delete</span>
+    </a>
+  </div>
+</td>
+
+      </script>
+    
+      <script id="share-team-template" type="text/html">
+        
+
+<div class="clearfix">
+  <span class="team-avatar-container">
+    <span class="aui-avatar aui-avatar-medium">
+      <span class="aui-avatar-inner">
+        <img src="[[avatar]]">
+      </span>
+    </span>
+  </span>
+  <span class="team-name-container">
+    [[display_name]]
+  </span>
+</div>
+<p class="helptext">
+  
+    Existing users are granted access to this team immediately.
+    New users will be sent an invitation.
+  
+</p>
+<div class="share-form"></div>
+
+      </script>
+    
+      <script id="scope-list-template" type="text/html">
+        <ul class="scope-list">
+  [[#scopes]]
+    <li class="scope-list--item">
+      <span class="scope-list--icon aui-icon aui-icon-small [[icon]]"></span>
+      <span class="scope-list--description">[[description]]</span>
+    </li>
+  [[/scopes]]
+</ul>
+
+      </script>
+    
+      <script id="source-changeset" type="text/html">
+        
+
+<a href="/enddl22/ardrone_side_project/src/[[raw_node]]/[[path]]?at=master"
+    class="[[#selected]]highlight[[/selected]]"
+    data-hash="[[node]]">
+  [[#author.username]]
+    <span class="aui-avatar aui-avatar-xsmall">
+      <span class="aui-avatar-inner">
+        <img src="[[author.avatar]]">
+      </span>
+    </span>
+    <span class="author" title="[[raw_author]]">[[author.display_name]]</span>
+  [[/author.username]]
+  [[^author.username]]
+    <span class="aui-avatar aui-avatar-xsmall">
+      <span class="aui-avatar-inner">
+        <img src="https://d301sr5gafysq2.cloudfront.net/dac230a7a1ec/img/default_avatar/user_blue.svg">
+      </span>
+    </span>
+    <span class="author unmapped" title="[[raw_author]]">[[author]]</span>
+  [[/author.username]]
+  <time datetime="[[utctimestamp]]" data-title="true">[[utctimestamp]]</time>
+  <span class="message">[[message]]</span>
+</a>
+
+      </script>
+    
+      <script id="embed-template" type="text/html">
+        
+
+<form class="aui inline-dialog-embed-dialog">
+  <label for="embed-code-[[dialogId]]">Embed this source in another page:</label>
+  <input type="text" readonly="true" value="&lt;script src=&quot;[[url]]&quot;&gt;&lt;/script&gt;" id="embed-code-[[dialogId]]" class="embed-code">
+</form>
+
+      </script>
+    
+  </div>
+
+
+
+
+  
+  
+
+
+<script src="enddl22%20_%20ardrone_side_project%20_%20source%20_%20src%20_%20ours%20_%20ardrone_pose_estimation%20_%20src%20%E2%80%94%20Bitbucket_files/djangojs.js"></script>
+<script src="enddl22%20_%20ardrone_side_project%20_%20source%20_%20src%20_%20ours%20_%20ardrone_pose_estimation%20_%20src%20%E2%80%94%20Bitbucket_files/vendor.js"></script>
+<script src="enddl22%20_%20ardrone_side_project%20_%20source%20_%20src%20_%20ours%20_%20ardrone_pose_estimation%20_%20src%20%E2%80%94%20Bitbucket_files/app.js"></script>
+
+
+<script async="" src="enddl22%20_%20ardrone_side_project%20_%20source%20_%20src%20_%20ours%20_%20ardrone_pose_estimation%20_%20src%20%E2%80%94%20Bitbucket_files/analytics.js"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"a2cef8c3d3","agent":"","transactionName":"Z11RZxdWW0cEVkYLDV4XdUYLVEFdClsdAAtEWkZQDlJBGgRFQhFMQl1DXFcZQ10AQkFYEV9NQVAA","applicationID":"1841284","errorBeacon":"bam.nr-data.net","applicationTime":93}</script>
+
+<aui-inline-dialog resolved="" class="aui-sidebar-submenu-dialog aui-layer" aria-hidden="true" alignment="right top" id="sidebar-submenu0"><div class="aui-inline-dialog-contents"></div></aui-inline-dialog><div aria-hidden="true" resolved="" style="z-index: 5000;" id="bb-typeahead-suggestions-7" class="bb-typeahead-suggestions aui-dropdown2 aui-style-default aui-layer aui-dropdown2-tailed bb-mention-input-results"><ul></ul></div><div href="#" aria-expanded="false" aria-controls="bb-typeahead-suggestions-7" resolved="" aria-haspopup="true" class="caret-marker aui-dropdown2-trigger aui-dropdown2-trigger-arrowless"></div><div aria-hidden="true" resolved="" style="z-index: 5000;" id="bb-typeahead-suggestions-10" class="bb-typeahead-suggestions aui-dropdown2 aui-style-default aui-layer"><ul></ul></div><div href="#" aria-expanded="false" aria-controls="bb-typeahead-suggestions-10" resolved="" aria-haspopup="true" class="caret-marker aui-dropdown2-trigger aui-dropdown2-trigger-arrowless"></div><div aria-hidden="true" resolved="" style="z-index: 5000;" id="bb-typeahead-suggestions-13" class="bb-typeahead-suggestions aui-dropdown2 aui-style-default aui-layer"><ul></ul></div><div href="#" aria-expanded="false" aria-controls="bb-typeahead-suggestions-13" resolved="" aria-haspopup="true" class="caret-marker aui-dropdown2-trigger aui-dropdown2-trigger-arrowless"></div><div aria-hidden="true" resolved="" style="z-index: 5000;" id="bb-typeahead-suggestions-16" class="bb-typeahead-suggestions aui-dropdown2 aui-style-default aui-layer aui-dropdown2-tailed bb-mention-input-results"><ul></ul></div><div href="#" aria-expanded="false" aria-controls="bb-typeahead-suggestions-16" resolved="" aria-haspopup="true" class="caret-marker aui-dropdown2-trigger aui-dropdown2-trigger-arrowless"></div><div aria-hidden="true" resolved="" style="z-index: 5000;" id="bb-typeahead-suggestions-21" class="bb-typeahead-suggestions aui-dropdown2 aui-style-default aui-layer"><ul></ul></div><div href="#" aria-expanded="false" aria-controls="bb-typeahead-suggestions-21" resolved="" aria-haspopup="true" class="caret-marker aui-dropdown2-trigger aui-dropdown2-trigger-arrowless"></div><div style="display: none; width: 0px; height: 0px;" class="igtranslator-main-div"><iframe scrolling="no" class="igtranslator-iframe" src="enddl22%20_%20ardrone_side_project%20_%20source%20_%20src%20_%20ours%20_%20ardrone_pose_estimation%20_%20src%20%E2%80%94%20Bitbucket_files/a.html" frameborder="0"></iframe></div><div title="Click to Show Translation" style="background-image: url(&quot;resource://jid1-dgnibwqga0sibw-at-jetpack/data/icons/home.png&quot;); display: none;" class="igtranslator-activator-icon bounceIn"></div></body></html>
